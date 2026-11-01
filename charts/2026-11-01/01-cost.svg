@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2200" viewBox="0 0 1800 2200">
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="1800" height="2200" rx="0" fill="#f4f8ff"/>
+<rect x="80" y="72" width="1640" height="8" rx="0" fill="#2961f4"/>
+<text x="80" y="173" font-size="68" fill="#102b52" font-weight="700" text-anchor="start">这轮测试调用，花了多少钱？</text>
+<text x="84" y="234" font-size="31" fill="#506783" font-weight="400" text-anchor="start">单位：人民币元 · 只计当前成绩对应批次 · 按官方单价折算已记录用量</text>
+<line x1="80" y1="2090" x2="1720" y2="2090" stroke="#d6e3f2" stroke-width="2"/>
+<text x="80" y="2140" font-size="30" fill="#102b52" font-weight="700" text-anchor="start">大肥鱼 · 记忆系统评测</text>
+<text x="80" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="start">github.com/Ornn8/memory-system-benchmark</text>
+<text x="1720" y="2141" font-size="30" fill="#506783" font-weight="400" text-anchor="end">1 / 7</text>
+<text x="1720" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="end">2026-11-01 · 固定版本实验</text>
+<text x="80" y="337" font-size="36" fill="#102b52" font-weight="700" text-anchor="start">维护、检索与作答：本批次合计</text>
+<text x="1720" y="337" font-size="27" fill="#506783" font-weight="400" text-anchor="end">完成量不同，不作为等量成本排名</text>
+<line x1="550.0" y1="420" x2="550.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="550.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">0</text>
+<line x1="722.0" y1="420" x2="722.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="722.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">10</text>
+<line x1="894.0" y1="420" x2="894.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="894.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">20</text>
+<line x1="1066.0" y1="420" x2="1066.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="1066.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">30</text>
+<line x1="1238.0" y1="420" x2="1238.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="1238.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">40</text>
+<line x1="1410.0" y1="420" x2="1410.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="1410.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">50</text>
+<text x="80" y="500" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">Qwen RAG</text>
+<text x="82" y="543" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="454" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="454" width="53.50840364" height="66" rx="8" fill="#007f91"/>
+<text x="1720" y="503" font-size="59" fill="#007f91" font-weight="700" text-anchor="end">¥ 3.11</text>
+<text x="80" y="685" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">dsh-soul</text>
+<text x="82" y="728" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="639" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="639" width="71.81364089600001" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="688" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 4.18</text>
+<text x="80" y="870" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">冷热方案</text>
+<text x="82" y="913" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="824" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="824" width="138.669773952" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="873" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 8.06</text>
+<text x="80" y="1055" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">dsh-rofm</text>
+<text x="82" y="1098" font-size="27" fill="#506783" font-weight="400" text-anchor="start">687 题已完成 · 中断保留</text>
+<rect x="550" y="1009" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1009" width="125.15100808000001" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1058" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 7.28</text>
+<text x="80" y="1240" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">digital-life-core</text>
+<text x="82" y="1283" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="1194" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1194" width="763.094655792" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1243" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 44.37</text>
+<text x="80" y="1425" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">SeekMemory</text>
+<text x="82" y="1468" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="1379" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1379" width="166.408866176" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1428" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 9.67</text>
+<text x="80" y="1610" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">SurfCore</text>
+<text x="82" y="1653" font-size="27" fill="#506783" font-weight="400" text-anchor="start">714 题已完成</text>
+<rect x="550" y="1564" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1564" width="240.718478192" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1613" font-size="59" fill="#2961f4" font-weight="700" text-anchor="end">¥ 14.00</text>
+<rect x="80" y="1835" width="1640" height="212" rx="12" fill="#e6eefb"/>
+<text x="110" y="1880" font-size="29" fill="#102b52" font-weight="700" text-anchor="start">包括本批次已记录的失败尝试；不含此前撤回的试跑、重跑费用。</text>
+<text x="110" y="1925" font-size="27" fill="#506783" font-weight="400" text-anchor="start">按实际缓存命中计价；沿用已有状态和缓存，不是从零建库成本或订阅账单。</text>
+<text x="110" y="1970" font-size="26" fill="#506783" font-weight="400" text-anchor="start">DeepSeek 命中 / 未命中 / 输出：0.02 / 1 / 4 元 / 百万 token。</text>
+<text x="110" y="2013" font-size="26" fill="#506783" font-weight="400" text-anchor="start">Qwen 嵌入与重排：各 0.5 元 / 百万 token。价格核对：2026-11-01。</text>
+</svg>

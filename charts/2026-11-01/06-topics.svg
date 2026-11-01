@@ -1,0 +1,407 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2200" viewBox="0 0 1800 2200">
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="1800" height="2200" rx="0" fill="#f4f8ff"/>
+<rect x="80" y="72" width="1640" height="8" rx="0" fill="#2961f4"/>
+<text x="80" y="173" font-size="68" fill="#102b52" font-weight="700" text-anchor="start">计划、假设与现实</text>
+<text x="84" y="234" font-size="31" fill="#506783" font-weight="400" text-anchor="start">每格显示：通过题数 / 该格实际题数；时间从相关事实最后一次提及开始算</text>
+<line x1="80" y1="2090" x2="1720" y2="2090" stroke="#d6e3f2" stroke-width="2"/>
+<text x="80" y="2140" font-size="30" fill="#102b52" font-weight="700" text-anchor="start">大肥鱼 · 记忆系统评测</text>
+<text x="80" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="start">github.com/Ornn8/memory-system-benchmark</text>
+<text x="1720" y="2141" font-size="30" fill="#506783" font-weight="400" text-anchor="end">6 / 7</text>
+<text x="1720" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="end">2026-11-01 · 固定版本实验</text>
+<text x="82" y="311" font-size="27" fill="#506783" font-weight="400" text-anchor="start">提问间隔</text>
+<text x="355.0" y="311" font-size="28" fill="#007f91" font-weight="700" text-anchor="middle">Qwen RAG</text>
+<text x="565.0" y="311" font-size="28" fill="#102b52" font-weight="700" text-anchor="middle">dsh-soul</text>
+<text x="775.0" y="311" font-size="28" fill="#102b52" font-weight="700" text-anchor="middle">冷热方案</text>
+<text x="985.0" y="311" font-size="28" fill="#102b52" font-weight="700" text-anchor="middle">dsh-rofm</text>
+<text x="1195.0" y="311" font-size="25" fill="#102b52" font-weight="700" text-anchor="middle">digital-life-core</text>
+<text x="1405.0" y="311" font-size="28" fill="#102b52" font-weight="700" text-anchor="middle">SeekMemory</text>
+<text x="1615.0" y="311" font-size="28" fill="#102b52" font-weight="700" text-anchor="middle">SurfCore</text>
+<line x1="80" y1="330" x2="1720" y2="330" stroke="#d6e3f2" stroke-width="2"/>
+<text x="82" y="378" font-size="31" fill="#102b52" font-weight="700" text-anchor="start">计划假设梦转述猜测  ·  能否区分不同叙述与已经发生的事实？</text>
+<text x="95" y="431" font-size="27" fill="#506783" font-weight="400" text-anchor="start">当天</text>
+<rect x="254" y="402" width="202" height="35" rx="4" fill="#b2cff8"/>
+<text x="355.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 16</text>
+<rect x="464" y="402" width="202" height="35" rx="4" fill="#bad4f9"/>
+<text x="565.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">13 / 16</text>
+<rect x="674" y="402" width="202" height="35" rx="4" fill="#c2d9fa"/>
+<text x="775.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">11 / 16</text>
+<rect x="884" y="402" width="202" height="35" rx="4" fill="#c2d9fa"/>
+<text x="985.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">11 / 16</text>
+<rect x="1094" y="402" width="202" height="35" rx="4" fill="#bed6fa"/>
+<text x="1195.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">12 / 16</text>
+<rect x="1304" y="402" width="202" height="35" rx="4" fill="#b2cff8"/>
+<text x="1405.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 16</text>
+<rect x="1514" y="402" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="1615.0" y="431" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 16</text>
+<text x="95" y="470" font-size="27" fill="#506783" font-weight="400" text-anchor="start">3 天</text>
+<rect x="254" y="441" width="202" height="35" rx="4" fill="#bed6fa"/>
+<text x="355.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">12 / 16</text>
+<rect x="464" y="441" width="202" height="35" rx="4" fill="#cee0fb"/>
+<text x="565.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 16</text>
+<rect x="674" y="441" width="202" height="35" rx="4" fill="#bad4f9"/>
+<text x="775.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">13 / 16</text>
+<rect x="884" y="441" width="202" height="35" rx="4" fill="#d3e3fb"/>
+<text x="985.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 16</text>
+<rect x="1094" y="441" width="202" height="35" rx="4" fill="#dbe8fc"/>
+<text x="1195.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">5 / 16</text>
+<rect x="1304" y="441" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="1405.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 16</text>
+<rect x="1514" y="441" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="1615.0" y="470" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 16</text>
+<text x="95" y="509" font-size="27" fill="#506783" font-weight="400" text-anchor="start">15 天</text>
+<rect x="254" y="480" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="355.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">14 / 16</text>
+<rect x="464" y="480" width="202" height="35" rx="4" fill="#bed6fa"/>
+<text x="565.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">12 / 16</text>
+<rect x="674" y="480" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="775.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 16</text>
+<rect x="884" y="480" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="985.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<rect x="1094" y="480" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="1195.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<rect x="1304" y="480" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="1405.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<rect x="1514" y="480" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="1615.0" y="509" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<text x="95" y="548" font-size="27" fill="#506783" font-weight="400" text-anchor="start">45 天</text>
+<rect x="254" y="519" width="202" height="35" rx="4" fill="#c2d9fa"/>
+<text x="355.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 13</text>
+<rect x="464" y="519" width="202" height="35" rx="4" fill="#d6e5fc"/>
+<text x="565.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">5 / 13</text>
+<rect x="674" y="519" width="202" height="35" rx="4" fill="#e5effd"/>
+<text x="775.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 13</text>
+<rect x="884" y="519" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 13</text>
+<rect x="1094" y="519" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 13</text>
+<rect x="1304" y="519" width="202" height="35" rx="4" fill="#eaf2fe"/>
+<text x="1405.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 13</text>
+<rect x="1514" y="519" width="202" height="35" rx="4" fill="#eaf2fe"/>
+<text x="1615.0" y="548" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 13</text>
+<text x="95" y="587" font-size="27" fill="#102b52" font-weight="700" text-anchor="start">四档合计</text>
+<rect x="254" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="355.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">50 / 61</text>
+<rect x="464" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="565.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">38 / 61</text>
+<rect x="674" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="775.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">30 / 61</text>
+<rect x="884" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="985.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">19 / 61</text>
+<rect x="1094" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1195.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">18 / 61</text>
+<rect x="1304" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1405.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">23 / 61</text>
+<rect x="1514" y="558" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1615.0" y="587" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">10 / 61</text>
+<line x1="80" y1="668" x2="1720" y2="668" stroke="#d6e3f2" stroke-width="2"/>
+<text x="82" y="694" font-size="31" fill="#102b52" font-weight="700" text-anchor="start">计划  ·  打算做，是否被记成已经做完？</text>
+<text x="95" y="747" font-size="27" fill="#506783" font-weight="400" text-anchor="start">当天</text>
+<rect x="254" y="718" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="355.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 17</text>
+<rect x="464" y="718" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="565.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 17</text>
+<rect x="674" y="718" width="202" height="35" rx="4" fill="#bdd6f9"/>
+<text x="775.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">13 / 17</text>
+<rect x="884" y="718" width="202" height="35" rx="4" fill="#bdd6f9"/>
+<text x="985.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">13 / 17</text>
+<rect x="1094" y="718" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="1195.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 17</text>
+<rect x="1304" y="718" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="1405.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">15 / 17</text>
+<rect x="1514" y="718" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="1615.0" y="747" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 17</text>
+<text x="95" y="786" font-size="27" fill="#506783" font-weight="400" text-anchor="start">3 天</text>
+<rect x="254" y="757" width="202" height="35" rx="4" fill="#b9d3f9"/>
+<text x="355.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">14 / 17</text>
+<rect x="464" y="757" width="202" height="35" rx="4" fill="#d4e4fc"/>
+<text x="565.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 17</text>
+<rect x="674" y="757" width="202" height="35" rx="4" fill="#c5dafa"/>
+<text x="775.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">11 / 17</text>
+<rect x="884" y="757" width="202" height="35" rx="4" fill="#dce9fc"/>
+<text x="985.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">5 / 17</text>
+<rect x="1094" y="757" width="202" height="35" rx="4" fill="#d4e4fc"/>
+<text x="1195.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 17</text>
+<rect x="1304" y="757" width="202" height="35" rx="4" fill="#d8e7fc"/>
+<text x="1405.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 17</text>
+<rect x="1514" y="757" width="202" height="35" rx="4" fill="#ebf3fe"/>
+<text x="1615.0" y="786" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 17</text>
+<text x="95" y="825" font-size="27" fill="#506783" font-weight="400" text-anchor="start">15 天</text>
+<rect x="254" y="796" width="202" height="35" rx="4" fill="#bed6fa"/>
+<text x="355.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">12 / 16</text>
+<rect x="464" y="796" width="202" height="35" rx="4" fill="#cee0fb"/>
+<text x="565.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 16</text>
+<rect x="674" y="796" width="202" height="35" rx="4" fill="#d3e3fb"/>
+<text x="775.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 16</text>
+<rect x="884" y="796" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 16</text>
+<rect x="1094" y="796" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="1195.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<rect x="1304" y="796" width="202" height="35" rx="4" fill="#ebf2fe"/>
+<text x="1405.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 16</text>
+<rect x="1514" y="796" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="1615.0" y="825" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 16</text>
+<text x="95" y="864" font-size="27" fill="#506783" font-weight="400" text-anchor="start">45 天</text>
+<rect x="254" y="835" width="202" height="35" rx="4" fill="#bdd5f9"/>
+<text x="355.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">10 / 13</text>
+<rect x="464" y="835" width="202" height="35" rx="4" fill="#d1e2fb"/>
+<text x="565.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 13</text>
+<rect x="674" y="835" width="202" height="35" rx="4" fill="#dbe8fc"/>
+<text x="775.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 13</text>
+<rect x="884" y="835" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 13</text>
+<rect x="1094" y="835" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 13</text>
+<rect x="1304" y="835" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1405.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 13</text>
+<rect x="1514" y="835" width="202" height="35" rx="4" fill="#eaf2fe"/>
+<text x="1615.0" y="864" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 13</text>
+<text x="95" y="903" font-size="27" fill="#102b52" font-weight="700" text-anchor="start">四档合计</text>
+<rect x="254" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="355.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">51 / 63</text>
+<rect x="464" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="565.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">36 / 63</text>
+<rect x="674" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="775.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">35 / 63</text>
+<rect x="884" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="985.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">18 / 63</text>
+<rect x="1094" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1195.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">23 / 63</text>
+<rect x="1304" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1405.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">22 / 63</text>
+<rect x="1514" y="874" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1615.0" y="903" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">6 / 63</text>
+<line x1="80" y1="984" x2="1720" y2="984" stroke="#d6e3f2" stroke-width="2"/>
+<text x="82" y="1010" font-size="31" fill="#102b52" font-weight="700" text-anchor="start">假设  ·  能否保留“如果”的前提？</text>
+<text x="95" y="1063" font-size="27" fill="#506783" font-weight="400" text-anchor="start">当天</text>
+<rect x="254" y="1034" width="202" height="35" rx="4" fill="#aeccf8"/>
+<text x="355.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">12 / 12</text>
+<rect x="464" y="1034" width="202" height="35" rx="4" fill="#b9d3f9"/>
+<text x="565.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">10 / 12</text>
+<rect x="674" y="1034" width="202" height="35" rx="4" fill="#b3cff8"/>
+<text x="775.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">11 / 12</text>
+<rect x="884" y="1034" width="202" height="35" rx="4" fill="#b9d3f9"/>
+<text x="985.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">10 / 12</text>
+<rect x="1094" y="1034" width="202" height="35" rx="4" fill="#b9d3f9"/>
+<text x="1195.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">10 / 12</text>
+<rect x="1304" y="1034" width="202" height="35" rx="4" fill="#b3cff8"/>
+<text x="1405.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">11 / 12</text>
+<rect x="1514" y="1034" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="1615.0" y="1063" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 12</text>
+<text x="95" y="1102" font-size="27" fill="#506783" font-weight="400" text-anchor="start">3 天</text>
+<rect x="254" y="1073" width="202" height="35" rx="4" fill="#bed6fa"/>
+<text x="355.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 12</text>
+<rect x="464" y="1073" width="202" height="35" rx="4" fill="#cee0fb"/>
+<text x="565.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 12</text>
+<rect x="674" y="1073" width="202" height="35" rx="4" fill="#b9d3f9"/>
+<text x="775.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">10 / 12</text>
+<rect x="884" y="1073" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="985.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 12</text>
+<rect x="1094" y="1073" width="202" height="35" rx="4" fill="#d4e4fc"/>
+<text x="1195.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">5 / 12</text>
+<rect x="1304" y="1073" width="202" height="35" rx="4" fill="#d9e7fc"/>
+<text x="1405.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 12</text>
+<rect x="1514" y="1073" width="202" height="35" rx="4" fill="#dfebfc"/>
+<text x="1615.0" y="1102" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 12</text>
+<text x="95" y="1141" font-size="27" fill="#506783" font-weight="400" text-anchor="start">15 天</text>
+<rect x="254" y="1112" width="202" height="35" rx="4" fill="#c0d7fa"/>
+<text x="355.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 11</text>
+<rect x="464" y="1112" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="565.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="674" y="1112" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="775.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 11</text>
+<rect x="884" y="1112" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1094" y="1112" width="202" height="35" rx="4" fill="#e9f1fd"/>
+<text x="1195.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 11</text>
+<rect x="1304" y="1112" width="202" height="35" rx="4" fill="#e3eefd"/>
+<text x="1405.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 11</text>
+<rect x="1514" y="1112" width="202" height="35" rx="4" fill="#e3eefd"/>
+<text x="1615.0" y="1141" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 11</text>
+<text x="95" y="1180" font-size="27" fill="#506783" font-weight="400" text-anchor="start">45 天</text>
+<rect x="254" y="1151" width="202" height="35" rx="4" fill="#b6d1f9"/>
+<text x="355.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 8</text>
+<rect x="464" y="1151" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="565.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 8</text>
+<rect x="674" y="1151" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="775.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 8</text>
+<rect x="884" y="1151" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1094" y="1151" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1304" y="1151" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="1405.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 8</text>
+<rect x="1514" y="1151" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="1615.0" y="1180" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 8</text>
+<text x="95" y="1219" font-size="27" fill="#102b52" font-weight="700" text-anchor="start">四档合计</text>
+<rect x="254" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="355.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">36 / 43</text>
+<rect x="464" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="565.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">26 / 43</text>
+<rect x="674" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="775.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">26 / 43</text>
+<rect x="884" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="985.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">13 / 43</text>
+<rect x="1094" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1195.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">16 / 43</text>
+<rect x="1304" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1405.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">18 / 43</text>
+<rect x="1514" y="1190" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1615.0" y="1219" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">9 / 43</text>
+<line x1="80" y1="1300" x2="1720" y2="1300" stroke="#d6e3f2" stroke-width="2"/>
+<text x="82" y="1326" font-size="31" fill="#102b52" font-weight="700" text-anchor="start">转述  ·  能否记住消息来源，不冒充亲身经历？</text>
+<text x="95" y="1379" font-size="27" fill="#506783" font-weight="400" text-anchor="start">当天</text>
+<rect x="254" y="1350" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="355.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="464" y="1350" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="565.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="674" y="1350" width="202" height="35" rx="4" fill="#ccdffb"/>
+<text x="775.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 11</text>
+<rect x="884" y="1350" width="202" height="35" rx="4" fill="#ccdffb"/>
+<text x="985.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 11</text>
+<rect x="1094" y="1350" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="1195.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="1304" y="1350" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="1405.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="1514" y="1350" width="202" height="35" rx="4" fill="#e9f1fd"/>
+<text x="1615.0" y="1379" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 11</text>
+<text x="95" y="1418" font-size="27" fill="#506783" font-weight="400" text-anchor="start">3 天</text>
+<rect x="254" y="1389" width="202" height="35" rx="4" fill="#ccdffb"/>
+<text x="355.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 11</text>
+<rect x="464" y="1389" width="202" height="35" rx="4" fill="#ccdffb"/>
+<text x="565.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 11</text>
+<rect x="674" y="1389" width="202" height="35" rx="4" fill="#c6dbfa"/>
+<text x="775.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 11</text>
+<rect x="884" y="1389" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="985.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 11</text>
+<rect x="1094" y="1389" width="202" height="35" rx="4" fill="#ddeafc"/>
+<text x="1195.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 11</text>
+<rect x="1304" y="1389" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="1405.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 11</text>
+<rect x="1514" y="1389" width="202" height="35" rx="4" fill="#e9f1fd"/>
+<text x="1615.0" y="1418" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 11</text>
+<text x="95" y="1457" font-size="27" fill="#506783" font-weight="400" text-anchor="start">15 天</text>
+<rect x="254" y="1428" width="202" height="35" rx="4" fill="#bad3f9"/>
+<text x="355.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 11</text>
+<rect x="464" y="1428" width="202" height="35" rx="4" fill="#c0d7fa"/>
+<text x="565.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 11</text>
+<rect x="674" y="1428" width="202" height="35" rx="4" fill="#ddeafc"/>
+<text x="775.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 11</text>
+<rect x="884" y="1428" width="202" height="35" rx="4" fill="#e3eefd"/>
+<text x="985.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 11</text>
+<rect x="1094" y="1428" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1304" y="1428" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1405.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1514" y="1428" width="202" height="35" rx="4" fill="#e9f1fd"/>
+<text x="1615.0" y="1457" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 11</text>
+<text x="95" y="1496" font-size="27" fill="#506783" font-weight="400" text-anchor="start">45 天</text>
+<rect x="254" y="1467" width="202" height="35" rx="4" fill="#bad3f9"/>
+<text x="355.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 11</text>
+<rect x="464" y="1467" width="202" height="35" rx="4" fill="#ccdffb"/>
+<text x="565.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 11</text>
+<rect x="674" y="1467" width="202" height="35" rx="4" fill="#e3eefd"/>
+<text x="775.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 11</text>
+<rect x="884" y="1467" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1094" y="1467" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1304" y="1467" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1405.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 11</text>
+<rect x="1514" y="1467" width="202" height="35" rx="4" fill="#e9f1fd"/>
+<text x="1615.0" y="1496" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 11</text>
+<text x="95" y="1535" font-size="27" fill="#102b52" font-weight="700" text-anchor="start">四档合计</text>
+<rect x="254" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="355.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">31 / 44</text>
+<rect x="464" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="565.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">27 / 44</text>
+<rect x="674" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="775.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">18 / 44</text>
+<rect x="884" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="985.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">12 / 44</text>
+<rect x="1094" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1195.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">10 / 44</text>
+<rect x="1304" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1405.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">11 / 44</text>
+<rect x="1514" y="1506" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1615.0" y="1535" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">4 / 44</text>
+<line x1="80" y1="1616" x2="1720" y2="1616" stroke="#d6e3f2" stroke-width="2"/>
+<text x="82" y="1642" font-size="31" fill="#102b52" font-weight="700" text-anchor="start">共同编的故事  ·  共同创作的情节，会不会当成现实？</text>
+<text x="95" y="1695" font-size="27" fill="#506783" font-weight="400" text-anchor="start">当天</text>
+<rect x="254" y="1666" width="202" height="35" rx="4" fill="#b4d0f9"/>
+<text x="355.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 10</text>
+<rect x="464" y="1666" width="202" height="35" rx="4" fill="#c8dcfa"/>
+<text x="565.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">6 / 10</text>
+<rect x="674" y="1666" width="202" height="35" rx="4" fill="#b4d0f9"/>
+<text x="775.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 10</text>
+<rect x="884" y="1666" width="202" height="35" rx="4" fill="#d5e5fc"/>
+<text x="985.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 10</text>
+<rect x="1094" y="1666" width="202" height="35" rx="4" fill="#c2d8fa"/>
+<text x="1195.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 10</text>
+<rect x="1304" y="1666" width="202" height="35" rx="4" fill="#d5e5fc"/>
+<text x="1405.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 10</text>
+<rect x="1514" y="1666" width="202" height="35" rx="4" fill="#e8f1fd"/>
+<text x="1615.0" y="1695" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 10</text>
+<text x="95" y="1734" font-size="27" fill="#506783" font-weight="400" text-anchor="start">3 天</text>
+<rect x="254" y="1705" width="202" height="35" rx="4" fill="#b4d0f9"/>
+<text x="355.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">9 / 10</text>
+<rect x="464" y="1705" width="202" height="35" rx="4" fill="#c2d8fa"/>
+<text x="565.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">7 / 10</text>
+<rect x="674" y="1705" width="202" height="35" rx="4" fill="#bbd4f9"/>
+<text x="775.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 10</text>
+<rect x="884" y="1705" width="202" height="35" rx="4" fill="#dce9fc"/>
+<text x="985.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 10</text>
+<rect x="1094" y="1705" width="202" height="35" rx="4" fill="#d5e5fc"/>
+<text x="1195.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 10</text>
+<rect x="1304" y="1705" width="202" height="35" rx="4" fill="#e2edfd"/>
+<text x="1405.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">2 / 10</text>
+<rect x="1514" y="1705" width="202" height="35" rx="4" fill="#e8f1fd"/>
+<text x="1615.0" y="1734" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 10</text>
+<text x="95" y="1773" font-size="27" fill="#506783" font-weight="400" text-anchor="start">15 天</text>
+<rect x="254" y="1744" width="202" height="35" rx="4" fill="#aeccf8"/>
+<text x="355.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 8</text>
+<rect x="464" y="1744" width="202" height="35" rx="4" fill="#d7e6fc"/>
+<text x="565.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">3 / 8</text>
+<rect x="674" y="1744" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="775.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="884" y="1744" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="985.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1094" y="1744" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1304" y="1744" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1405.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1514" y="1744" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1615.0" y="1773" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<text x="95" y="1812" font-size="27" fill="#506783" font-weight="400" text-anchor="start">45 天</text>
+<rect x="254" y="1783" width="202" height="35" rx="4" fill="#aeccf8"/>
+<text x="355.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">8 / 8</text>
+<rect x="464" y="1783" width="202" height="35" rx="4" fill="#cee0fb"/>
+<text x="565.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">4 / 8</text>
+<rect x="674" y="1783" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="775.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="884" y="1783" width="202" height="35" rx="4" fill="#e7f0fd"/>
+<text x="985.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">1 / 8</text>
+<rect x="1094" y="1783" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1195.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1304" y="1783" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1405.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<rect x="1514" y="1783" width="202" height="35" rx="4" fill="#eff5fe"/>
+<text x="1615.0" y="1812" font-size="29" fill="#102b52" font-weight="400" text-anchor="middle">0 / 8</text>
+<text x="95" y="1851" font-size="27" fill="#102b52" font-weight="700" text-anchor="start">四档合计</text>
+<rect x="254" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="355.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">34 / 36</text>
+<rect x="464" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="565.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">20 / 36</text>
+<rect x="674" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="775.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">17 / 36</text>
+<rect x="884" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="985.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">8 / 36</text>
+<rect x="1094" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1195.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">11 / 36</text>
+<rect x="1304" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1405.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">6 / 36</text>
+<rect x="1514" y="1822" width="202" height="35" rx="4" fill="#dbe6f5"/>
+<text x="1615.0" y="1851" font-size="29" fill="#102b52" font-weight="700" text-anchor="middle">2 / 36</text>
+<text x="80" y="2026" font-size="26" fill="#506783" font-weight="400" text-anchor="start">颜色越深，通过率越高。考点互有重叠，不能把各考点题数相加。</text>
+<text x="80" y="2067" font-size="26" fill="#506783" font-weight="400" text-anchor="start">基于七路共同的 687 题；ROFM 中断后，部分时间格不足原定十组。</text>
+</svg>

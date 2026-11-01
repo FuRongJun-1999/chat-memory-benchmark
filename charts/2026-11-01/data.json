@@ -1,0 +1,5136 @@
+{
+  "version": "public-chart-data-20261101-v1",
+  "comparison_count": 687,
+  "scope": "Seven systems on the same 687 answered question instances; no new exam or grading.",
+  "selection_sha256": "d59d0ceb1f2af5b8277fa9c2cd63885e59dd4acbcca78de46d83fd4d6cd50798",
+  "cost_scope": "Recorded new calls within each retained-result execution, including recorded failures and maintenance; excludes withdrawn older runs. Not cold-start cost or subscription bill.",
+  "price_sources": [
+    "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "https://help.aliyun.com/zh/model-studio/model-pricing"
+  ],
+  "pricing_checked": "2026-11-01",
+  "currency": "CNY",
+  "deepseek_cny_per_million": {
+    "cache_hit": 0.02,
+    "cache_miss": 1,
+    "output": 4
+  },
+  "qwen_cny_per_million": {
+    "qwen3.7-text-embedding": 0.5,
+    "qwen3.7-text-rerank": 0.5
+  },
+  "systems": {
+    "qwen-rag": {
+      "label": "Qwen RAG",
+      "passed": 574,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "8a5009ef56104da6fe3953b79d7c109db85d148d5f843477e15ee2c20791f755",
+      "source_report_sha256": "21337bd1e2fba83714257c12a860091de870c8654a86bef69992f3d9c3ab8ad1",
+      "topics": {
+        "假设": {
+          "passed": 36,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 54,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 17,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 12,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 34,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 48,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 13,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 11,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 12,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 48,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 11,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 13,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 44,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 14,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 12,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 10,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 40,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 34,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 28,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 30,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 30,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 36,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 39,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 47,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 14,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 12,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 28,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 28,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 51,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 13,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 13,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 12,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 44,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 88,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 23,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 22,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 23,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 20,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 44,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 11,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 43,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 33,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 51,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 14,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 50,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 14,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 47,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 14,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 31,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 9,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 60,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 16,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 14,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 15,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 15,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 3.1109536999999996,
+        "deepseek_cny": 1.4617681999999999,
+        "qwen_cny": 1.6491855,
+        "recorded_calls": 714,
+        "completed_answers": 714,
+        "prompt_tokens": 1350573,
+        "cached_tokens": 12160,
+        "completion_tokens": 30778,
+        "qwen_tokens_by_model": {
+          "qwen3.7-text-rerank": 3267706,
+          "qwen3.7-text-embedding": 30665
+        },
+        "started": "2026-11-01T01:42:13.455810+09:00",
+        "finished_or_stopped": "2026-11-01T01:49:58.523924+09:00",
+        "ledger_offset": 868183,
+        "selected_receipts_sha256": "29c08a1b5ad6300c5fd08c232aa7ad417bb8872e206caa398e25063fd8ea4d82",
+        "execution_sha256": "4aedcdd96f5ec1933250e1e91f35aa62bd043f26f90e451edb9294f800a42cc6",
+        "state_sha256": "a8d54cbd20fd4ebb75678ebe8166b82533d9a72fbf8abbf8b8ca7c63cfac4fbb"
+      }
+    },
+    "archeon-hotcold": {
+      "label": "冷热方案",
+      "passed": 352,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "a2512c1c275f3d80c83cfbf047d3faf61f1257e64f20a74eed5a29f329f02e42",
+      "source_report_sha256": "b3c2da508ca558d38af17e133cdde530a796a87bd44bc1a94a7743df217ae297",
+      "topics": {
+        "假设": {
+          "passed": 26,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 32,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 17,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 17,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 20,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 18,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 31,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 14,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 21,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 30,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 20,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 19,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 12,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 25,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 31,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 27,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 14,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 20,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 20,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 27,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 29,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 56,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 22,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 22,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 24,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 25,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 24,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 35,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 30,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 30,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 18,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 48,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 16,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 13,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 9,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 10,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 8.062196160000001,
+        "deepseek_cny": 8.062196160000001,
+        "qwen_cny": 0,
+        "recorded_calls": 3128,
+        "completed_answers": 714,
+        "prompt_tokens": 6807168,
+        "cached_tokens": 1694208,
+        "completion_tokens": 728838,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T01:42:02.621719+09:00",
+        "finished_or_stopped": "2026-11-01T02:43:04.610536+09:00",
+        "ledger_offset": 11157747,
+        "selected_receipts_sha256": "c7a6003431b068eab41bf556d82da1fdfacd8afe48d162e3c23c11c4e5491d88",
+        "execution_sha256": "cce046579d09e71c0756185fb68ca551cde5df102128bab53baa6b6795c5109a",
+        "state_sha256": "21bc41d8d9a1963d1613920d76965c4d630b37b55e87ca529be58860d33d9a7c"
+      }
+    },
+    "digital-life-core": {
+      "label": "digital-life-core",
+      "passed": 230,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "0281f87faded6f57d10fecf6998850d5a6eebfa8f8ae1b4a401feffc1e63dac6",
+      "source_report_sha256": "903cb3d34bffcde237935899dda2bc906836558374806319f2e2110a3e69c818",
+      "topics": {
+        "假设": {
+          "passed": 16,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 16,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 11,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 7,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 17,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 19,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 12,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 28,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 12,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 9,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 9,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 20,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 15,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 21,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 12,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 9,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 15,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 20,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 26,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 19,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 11,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 17,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 13,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 23,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 18,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 24,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 10,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 34,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 44.36596836,
+        "deepseek_cny": 44.36596836,
+        "qwen_cny": 0,
+        "recorded_calls": 6336,
+        "completed_answers": 714,
+        "prompt_tokens": 38987429,
+        "cached_tokens": 1136768,
+        "completion_tokens": 1623143,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T01:42:40.433823+09:00",
+        "finished_or_stopped": "2026-11-01T06:11:01.596451+09:00",
+        "ledger_offset": 11157747,
+        "selected_receipts_sha256": "61036f8c7dfae818773279daf1a7a6b54c10ddb09d5792c10e3c4b25686fe7e0",
+        "execution_sha256": "fb4d9f0e81ddaabf52abbb4a625cd87ec963b9524042fd0059fd03f8023fd0e4",
+        "state_sha256": "e8cde820299b9dc050525fa94cdb96a529c7c75b6661849fdde67d566c59b359"
+      }
+    },
+    "seekmemory": {
+      "label": "SeekMemory",
+      "passed": 227,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "eff43dd4bb52912cdc91d41d6be62e9b734fc7645f9797adaa7c9462feb4eb3f",
+      "source_report_sha256": "6cd7508f3a612919dae1004ede239c93e61e99d5484eb8c583781b897395bfdb",
+      "topics": {
+        "假设": {
+          "passed": 18,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 17,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 6,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 4,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 11,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 16,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 14,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 28,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 11,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 4,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 12,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 23,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 14,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 21,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 11,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 5,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 11,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 14,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 26,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 21,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 12,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 15,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 16,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 22,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 23,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 27,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 11,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 37,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 9.67493408,
+        "deepseek_cny": 9.67493408,
+        "qwen_cny": 0,
+        "recorded_calls": 6395,
+        "completed_answers": 714,
+        "prompt_tokens": 8865092,
+        "cached_tokens": 7371904,
+        "completion_tokens": 2008577,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T01:42:25.658727+09:00",
+        "finished_or_stopped": "2026-11-01T06:32:26.216326+09:00",
+        "ledger_offset": 11157747,
+        "selected_receipts_sha256": "1b4f66d3cf24129a9eb82f42d309dcf4fc8ad786101e0290d099f04808ef691a",
+        "execution_sha256": "01bdf570b642bb43072f644652c0c4d47232bd4ea3ce6deb9c74595d2133d0cc",
+        "state_sha256": "78304173e2b5d73d7bf5976d2ebc25821bf08b023ee9cc7029883cea177014b5"
+      }
+    },
+    "surfcore": {
+      "label": "SurfCore",
+      "passed": 122,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "24b6344a7ea577bd8eb61ceb2be38fb5b0dd35e305e9e7e431639029a7016779",
+      "source_report_sha256": "b3bde6f6a4ac979a4f0d3f96f05f45680ac2d004253bdcfd3dc0a50cccca6b2f",
+      "topics": {
+        "假设": {
+          "passed": 9,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 17,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 2,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 0,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 7,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 16,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 8,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 25,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 7,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 2,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 0,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 11,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 1,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 11,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 0,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 4,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 3,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 16,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 4,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 2,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 2,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 6,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 2,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 6,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 2,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 10,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 14,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 4,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 36,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 13.99526036,
+        "deepseek_cny": 13.99526036,
+        "qwen_cny": 0,
+        "recorded_calls": 6484,
+        "completed_answers": 714,
+        "prompt_tokens": 156988125,
+        "cached_tokens": 149117568,
+        "completion_tokens": 785588,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T13:27:31.716288+09:00",
+        "finished_or_stopped": "2026-11-01T14:50:38.053661+09:00",
+        "ledger_offset": 19910091,
+        "selected_receipts_sha256": "117864aeb4b4ad15f3cd031266738e91e8350bcf01c8a5fae2466e283b38305c",
+        "execution_sha256": "186bce8801ae41cb55a3f399d79380725058eda2bab56ed62345d87057c89044",
+        "state_sha256": "873cdfb3db242fd8e0c02c7af6325983dacc929b50e20dffbbe7eb41d2d747a3"
+      }
+    },
+    "dsh-soul": {
+      "label": "dsh-soul",
+      "passed": 402,
+      "total": 687,
+      "full_answered": 714,
+      "source_review_sha256": "f070cba8de30fba91adb7f036a22848536a6f8e33016c0e2b67c8ef92734185c",
+      "source_report_sha256": "c7d45cd5ed93bbc20a2881b88b401b3b6053cfc1bf9d047bb2a4083a96ea5feb",
+      "topics": {
+        "假设": {
+          "passed": 26,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 41,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 14,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 20,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 24,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 25,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 30,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 12,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 23,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 28,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 13,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 4,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 16,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 33,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 29,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 30,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 21,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 5,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 26,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 29,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 73,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 21,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 21,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 16,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 15,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 33,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 23,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 33,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 10,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 5,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 36,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 38,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 12,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 5,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 42,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 12,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 11,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 8,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 27,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 8,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 6,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 51,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 12,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 4.17521168,
+        "deepseek_cny": 4.17521168,
+        "qwen_cny": 0,
+        "recorded_calls": 1585,
+        "completed_answers": 714,
+        "prompt_tokens": 6100536,
+        "cached_tokens": 2541184,
+        "completion_tokens": 141259,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T14:56:21.377171+09:00",
+        "finished_or_stopped": "2026-11-01T15:10:44.279835+09:00",
+        "ledger_offset": 24711069,
+        "selected_receipts_sha256": "1a1d14c185c5a940a50fb218a246918fc2f13ad308db99190431ab8701e917cd",
+        "execution_sha256": "4534a209d27d19a1ba1ca875bc06c700d41be4aa3ca4af0fd28ccd1a15e44846",
+        "state_sha256": "627ac0bd5a0cd1b826c5241d44aa80c655705c63ab5ec6c06ec12082dd492483"
+      }
+    },
+    "dsh-rofm": {
+      "label": "dsh-rofm",
+      "passed": 242,
+      "total": 687,
+      "full_answered": 687,
+      "source_review_sha256": "6b6bbea42b17c5693b94f4f4bc53ed2d32841e21353b67ca4dbee06a494bf464",
+      "source_report_sha256": "9e23b76d32f39eeec086d80b39444724ec0cbe0d0e29cbaebb81ac7ccd1095aa",
+      "topics": {
+        "假设": {
+          "passed": 13,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 8
+            }
+          ]
+        },
+        "偏好": {
+          "passed": 23,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 19
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "passed": 8,
+          "total": 36,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 8
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "分散的线索": {
+          "passed": 4,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 4,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "passed": 19,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 3,
+              "total": 13
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "passed": 21,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 14,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 14
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "改口": {
+          "passed": 14,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "passed": 31,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 8,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 7,
+              "total": 9
+            }
+          ]
+        },
+        "时间约定": {
+          "passed": 14,
+          "total": 41,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 9
+            }
+          ]
+        },
+        "时间题": {
+          "passed": 7,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "passed": 8,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 8
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "passed": 24,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 10
+            }
+          ]
+        },
+        "生日": {
+          "passed": 13,
+          "total": 39,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 9
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "passed": 20,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 15
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 13
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 11
+            }
+          ]
+        },
+        "相似事件": {
+          "passed": 11,
+          "total": 35,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 7,
+              "total": 10
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 10
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 9
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 6
+            }
+          ]
+        },
+        "相对日期": {
+          "passed": 7,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 3,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 10
+            }
+          ]
+        },
+        "真实变化": {
+          "passed": 15,
+          "total": 57,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 15
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 14
+            }
+          ]
+        },
+        "称呼条件": {
+          "passed": 17,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 13
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 10
+            }
+          ]
+        },
+        "第三方事实": {
+          "passed": 30,
+          "total": 113,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 20,
+              "total": 29
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 29
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 28
+            },
+            {
+              "days": 45,
+              "passed": 2,
+              "total": 27
+            }
+          ]
+        },
+        "纠错": {
+          "passed": 10,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 8,
+              "total": 12
+            },
+            {
+              "days": 3,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 1,
+              "total": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "passed": 16,
+          "total": 53,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 10
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "职业": {
+          "passed": 17,
+          "total": 50,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 10,
+              "total": 14
+            },
+            {
+              "days": 3,
+              "passed": 6,
+              "total": 13
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "计划": {
+          "passed": 18,
+          "total": 63,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 13,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 5,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 0,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "passed": 19,
+          "total": 61,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 11,
+              "total": 16
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 16
+            },
+            {
+              "days": 15,
+              "passed": 1,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 13
+            }
+          ]
+        },
+        "资料不足": {
+          "passed": 23,
+          "total": 52,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 9,
+              "total": 15
+            },
+            {
+              "days": 3,
+              "passed": 7,
+              "total": 14
+            },
+            {
+              "days": 15,
+              "passed": 3,
+              "total": 12
+            },
+            {
+              "days": 45,
+              "passed": 4,
+              "total": 11
+            }
+          ]
+        },
+        "转述": {
+          "passed": 12,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 6,
+              "total": 11
+            },
+            {
+              "days": 3,
+              "passed": 4,
+              "total": 11
+            },
+            {
+              "days": 15,
+              "passed": 2,
+              "total": 11
+            },
+            {
+              "days": 45,
+              "passed": 0,
+              "total": 11
+            }
+          ]
+        },
+        "边界": {
+          "passed": 40,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "passed": 15,
+              "total": 17
+            },
+            {
+              "days": 3,
+              "passed": 9,
+              "total": 17
+            },
+            {
+              "days": 15,
+              "passed": 7,
+              "total": 16
+            },
+            {
+              "days": 45,
+              "passed": 9,
+              "total": 16
+            }
+          ]
+        }
+      },
+      "cost": {
+        "cny": 7.276221400000001,
+        "deepseek_cny": 7.276221400000001,
+        "qwen_cny": 0,
+        "recorded_calls": 2018,
+        "completed_answers": 687,
+        "prompt_tokens": 8388671,
+        "cached_tokens": 1969920,
+        "completion_tokens": 204518,
+        "qwen_tokens_by_model": {},
+        "started": "2026-11-01T15:36:30.395029+09:00",
+        "finished_or_stopped": "2026-11-01T16:18:46.605940+09:00",
+        "ledger_offset": 26521308,
+        "selected_receipts_sha256": "917326794c9a0804b32fcbefe72b4815d8cb1d2f79fb0e1e7a04816dbef3fac2",
+        "execution_sha256": "1b751886bd6f3e9b775af7dfa6f6388c6b8f9bd9202b83a396a6868df9f5a7fe",
+        "state_sha256": "8cb55106180e2a5974d1542ba5277d5de579aba0a314a3c029c2f8e4fd48fb5a"
+      }
+    }
+  },
+  "excluded": [
+    {
+      "system": "dsh-world",
+      "reason": "Old partial trial; no complete comparable new-exam result."
+    }
+  ]
+}

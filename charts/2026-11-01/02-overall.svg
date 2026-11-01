@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2200" viewBox="0 0 1800 2200">
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="1800" height="2200" rx="0" fill="#f4f8ff"/>
+<rect x="80" y="72" width="1640" height="8" rx="0" fill="#2961f4"/>
+<text x="80" y="173" font-size="68" fill="#102b52" font-weight="700" text-anchor="start">同样的 687 题，谁记得更好？</text>
+<text x="84" y="234" font-size="31" fill="#506783" font-weight="400" text-anchor="start">固定六个人物 · 最长半年 · 每天约两轮 · 所有系统使用相同题目集合</text>
+<line x1="80" y1="2090" x2="1720" y2="2090" stroke="#d6e3f2" stroke-width="2"/>
+<text x="80" y="2140" font-size="30" fill="#102b52" font-weight="700" text-anchor="start">大肥鱼 · 记忆系统评测</text>
+<text x="80" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="start">github.com/Ornn8/memory-system-benchmark</text>
+<text x="1720" y="2141" font-size="30" fill="#506783" font-weight="400" text-anchor="end">2 / 7</text>
+<text x="1720" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="end">2026-11-01 · 固定版本实验</text>
+<text x="80" y="337" font-size="36" fill="#102b52" font-weight="700" text-anchor="start">整题通过数 / 共同已答题数</text>
+<text x="1720" y="337" font-size="28" fill="#506783" font-weight="400" text-anchor="end">柱长 = 通过率</text>
+<line x1="550.0" y1="420" x2="550.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="550.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">0%</text>
+<line x1="765.0" y1="420" x2="765.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="765.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">25%</text>
+<line x1="980.0" y1="420" x2="980.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="980.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">50%</text>
+<line x1="1195.0" y1="420" x2="1195.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="1195.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">75%</text>
+<line x1="1410.0" y1="420" x2="1410.0" y2="1775" stroke="#d6e3f2" stroke-width="2"/>
+<text x="1410.0" y="393" font-size="25" fill="#506783" font-weight="400" text-anchor="middle">100%</text>
+<text x="80" y="500" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">Qwen RAG</text>
+<text x="82" y="543" font-size="26" fill="#506783" font-weight="400" text-anchor="start">嵌入召回＋重排，对照流程</text>
+<rect x="550" y="454" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="454" width="718.5443959243086" height="66" rx="8" fill="#007f91"/>
+<text x="1720" y="501" font-size="46" fill="#007f91" font-weight="700" text-anchor="end">574 / 687</text>
+<text x="1720" y="544" font-size="28" fill="#506783" font-weight="400" text-anchor="end">83.6%</text>
+<text x="80" y="685" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">dsh-soul</text>
+<text x="82" y="728" font-size="26" fill="#506783" font-weight="400" text-anchor="start">糖霜Official</text>
+<rect x="550" y="639" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="639" width="503.231441048035" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="686" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">402 / 687</text>
+<text x="1720" y="729" font-size="28" fill="#506783" font-weight="400" text-anchor="end">58.5%</text>
+<text x="80" y="870" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">冷热方案</text>
+<text x="82" y="913" font-size="26" fill="#506783" font-weight="400" text-anchor="start">原无奇变 · 按方案复现</text>
+<rect x="550" y="824" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="824" width="440.6404657933042" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="871" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">352 / 687</text>
+<text x="1720" y="914" font-size="28" fill="#506783" font-weight="400" text-anchor="end">51.2%</text>
+<text x="80" y="1055" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">dsh-rofm</text>
+<text x="82" y="1098" font-size="26" fill="#506783" font-weight="400" text-anchor="start">鄙人乃路人甲 · 测试阈值</text>
+<rect x="550" y="1009" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1009" width="302.9403202328967" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1056" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">242 / 687</text>
+<text x="1720" y="1099" font-size="28" fill="#506783" font-weight="400" text-anchor="end">35.2%</text>
+<text x="80" y="1240" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">digital-life-core</text>
+<text x="82" y="1283" font-size="26" fill="#506783" font-weight="400" text-anchor="start">温水</text>
+<rect x="550" y="1194" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1194" width="287.9184861717613" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1241" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">230 / 687</text>
+<text x="1720" y="1284" font-size="28" fill="#506783" font-weight="400" text-anchor="end">33.5%</text>
+<text x="80" y="1425" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">SeekMemory</text>
+<text x="82" y="1468" font-size="26" fill="#506783" font-weight="400" text-anchor="start">BangBang在coding · 开启 Dream</text>
+<rect x="550" y="1379" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1379" width="284.1630276564774" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1426" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">227 / 687</text>
+<text x="1720" y="1469" font-size="28" fill="#506783" font-weight="400" text-anchor="end">33.0%</text>
+<text x="80" y="1610" font-size="43" fill="#102b52" font-weight="700" text-anchor="start">SurfCore</text>
+<text x="82" y="1653" font-size="26" fill="#506783" font-weight="400" text-anchor="start">玛露Marrow</text>
+<rect x="550" y="1564" width="860" height="66" rx="8" fill="#e5edf8"/>
+<rect x="550" y="1564" width="152.72197962154294" height="66" rx="8" fill="#2961f4"/>
+<text x="1720" y="1611" font-size="46" fill="#2961f4" font-weight="700" text-anchor="end">122 / 687</text>
+<text x="1720" y="1654" font-size="28" fill="#506783" font-weight="400" text-anchor="end">17.8%</text>
+<rect x="80" y="1835" width="1640" height="212" rx="12" fill="#e6eefb"/>
+<text x="110" y="1889" font-size="33" fill="#102b52" font-weight="700" text-anchor="start">本次共同题目中，六个项目／方案的通过量均未超过 Qwen 检索对照。</text>
+<text x="110" y="1944" font-size="28" fill="#506783" font-weight="400" text-anchor="start">ROFM 未答的 27 题从七路一起排除；不是把未答题判成错误。</text>
+<text x="110" y="1990" font-size="28" fill="#506783" font-weight="400" text-anchor="start">dsh-world 仅完成旧卷部分试跑，不进入本图。结论仅适用于本次配置。</text>
+</svg>
