@@ -1,0 +1,25 @@
+{
+  "version": "public-demo-one-person-20261101-v1-github.1",
+  "purpose": "public_demo_not_ranked",
+  "new_synthetic_content": true,
+  "generation_model": "gpt-6.1-terra",
+  "system_exams_performed": false,
+  "publication_status": "public_release",
+  "file_sha256": {
+    "character.json": "886557ec41e42f64a25b25c564957a6ff58f858f92d5890434246c3c3a174e91",
+    "exam-inputs.jsonl": "8d58fa5cf6e2ff40c6f902201d343059986fa36468661618d56eb91d6180acc5",
+    "histories/PUB01.jsonl": "ea356896d2726bed8b26c43915e5e3939bb67a46d940dafffa29926557d838c0",
+    "read_exam.py": "31344d86032340ddc8292a09453cf6f807c848343f615b3b1d22e94cd634dfd3",
+    "README.md": "fa6f1a250a5a23d0e2d43a5e9e0ba4ad675a22713e420931955b23fa09fd880d",
+    "review-only/answer-key.jsonl": "17fcd6846d7a0dd04497b759fc2cbe9026ecb3b7c62fb61089ed38f7918f7a68",
+    "review-only/cases-PUB01.jsonl": "227f858969ea45cfbc3d4f33f32ad7a0ce2f24a773d0f63e299332ef53cb85ea",
+    "statistics.json": "81d6ed11ccb844450744ee2aa9449628536b72e41de233aa71e30197d9b23da6",
+    "完整对话.md": "7a647e7452bca77d34a58e1d524c5b160295fb505af7a72cd1c94c1771b3c0f4",
+    "示例题.html": "743ace54195033ea8418f9d10bab1a48d4a762bb8f12dd7a1d94e16b0cfca2f4",
+    "示例题.md": "129e26bd9adad82993fd620a79ff934873fb6796308ddfa0e754ff781f3583ba"
+  },
+  "source_version": "public-demo-one-person-20261101-v1",
+  "repository": "https://github.com/Ornn8/memory-system-benchmark",
+  "license": "MIT",
+  "original_archive_sha256": "7e15f87a915de67a90112d37a38ff6dcf3d83c3e06edb8a383b9627bba101735"
+}

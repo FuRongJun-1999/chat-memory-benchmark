@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Keep manifest-bound files byte-identical across Windows and Linux checkouts.
+# The original archive includes CR line endings; these are part of its hashes.
+demo/** -text whitespace=-blank-at-eol

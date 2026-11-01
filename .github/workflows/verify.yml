@@ -1,0 +1,24 @@
+name: Verify public demo
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Validate exam input boundaries
+        run: python demo/read_exam.py --verify-all
+      - name: Check dataset integrity and isolation
+        run: python -m unittest discover -s tests -v
