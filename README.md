@@ -6,6 +6,23 @@
 
 **首版公开测试方法、接入协议、可运行的读题工具、独立虚构示例及本轮汇总成绩。正式六人物考卷暂未公开；这里的示例不能复现视频中的分数。**
 
+## 已经测过哪些
+
+共 **7 个社区项目／方案，加 1 个 Qwen RAG 对照**。下面是项目目录，不是混合排名：完整卷、共同已答题和旧卷试跑的范围不同，比较请看各行链接里的同卷成绩。
+
+| 项目／上游 | 作者 | 测试状态与成绩（通过 / 已答） |
+| --- | --- | --- |
+| [冷热记忆方案（ARCHEON）](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization) | 原无奇变 / ARCHEON999 | 按公开方案复现；完整卷 [356 / 714](results/2026-11-01-first-four.md) |
+| [SeekMemory](https://github.com/NeverENG/SeekMemory) | BangBang在coding / NeverENG | 原版插件，开启 Dream；完整卷 [230 / 714](results/2026-11-01-first-four.md) |
+| [digital-life-core](https://github.com/mashangshui/digital-life-core) | 温水 / mashangshui | 原生核心与迁移入口；完整卷 [233 / 714](results/2026-11-01-first-four.md) |
+| [dsh-world](https://github.com/chenkezhen480/dsh-world) | CyreneAKen | **旧卷部分试跑，按预算停测**；未参加新卷完整比较，见[运行说明](docs/tested-configurations.md#dsh-world) |
+| [dsh-soul](https://github.com/icyaaaww/dsh-soul) | 糖霜Official | 完整卷 418 / 714；合辑共同题 [402 / 687](results/2026-11-01.md) |
+| [SurfCore](https://github.com/Mieksido/surfcore) | 玛露Marrow | 完整卷 123 / 714；合辑共同题 [122 / 687](results/2026-11-01.md) |
+| [dsh-rofm](https://github.com/wall1234567/dsh-rofm) | 鄙人乃路人甲 | 降低测试归档阈值后中断；已答 [242 / 687](results/2026-11-01.md)，另有 27 题未答 |
+| Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
+
+各项目的固定版本、实际接入方式、维护开关和局限统一放在[测试配置与局限](docs/tested-configurations.md)。作者署名沿用评测登记信息。
+
 ## 从哪里开始
 
 | 你想做什么 | 看这里 |
@@ -13,8 +30,9 @@
 | 看考什么、怎么判 | [测试方法](docs/methodology.md) |
 | 直接看示例题、答案和证据 | 下载仓库后打开 [示例题.html](demo/示例题.html)，或在线读 [示例题.md](demo/示例题.md) |
 | 把示例接到自己的系统 | [接入说明](docs/integration.md)、[读题工具](demo/read_exam.py) |
-| 核对本轮系统版本和配置 | [测试配置与局限](docs/tested-configurations.md) |
-| 看视频中的成绩口径 | [本轮汇总](results/2026-11-01.md) |
+| 核对所有已测系统版本和配置 | [测试配置与局限](docs/tested-configurations.md) |
+| 看之前四期的完整成绩 | [冷热方案、SeekMemory、digital-life-core、Qwen：714 题](results/2026-11-01-first-four.md) |
+| 看新增三项目合辑的成绩 | [Soul、SurfCore、ROFM、Qwen：共同 687 题](results/2026-11-01.md) |
 | 了解哪些公开、哪些保留 | [发布范围](docs/publication.md) |
 
 ## 五分钟运行公开示例

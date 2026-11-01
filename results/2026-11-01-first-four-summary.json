@@ -1,0 +1,3296 @@
+{
+  "version": "formal-first-four-summary-20261101-v1",
+  "dataset": "private-formal-six-personas",
+  "public_demo_results": false,
+  "formal_data_public": false,
+  "end_to_end_public_reproduction": false,
+  "comparison_question_instances": 714,
+  "score_metric": "whole_answer_passed",
+  "systems": {
+    "archeon-hotcold": {
+      "label": "冷热记忆方案",
+      "overall": {
+        "passed": 356,
+        "total": 714
+      },
+      "source_report_sha256": "b3c2da508ca558d38af17e133cdde530a796a87bd44bc1a94a7743df217ae297",
+      "source_judgments_sha256": "a2512c1c275f3d80c83cfbf047d3faf61f1257e64f20a74eed5a29f329f02e42",
+      "topics": {
+        "假设": {
+          "whole_answer_passed": 29,
+          "total": 49,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 4,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "偏好": {
+          "whole_answer_passed": 32,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 17,
+              "total": 19,
+              "groups": 19
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "whole_answer_passed": 18,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "分散的线索": {
+          "whole_answer_passed": 20,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "whole_answer_passed": 18,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "whole_answer_passed": 31,
+          "total": 59,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 14,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "改口": {
+          "whole_answer_passed": 21,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "whole_answer_passed": 30,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间约定": {
+          "whole_answer_passed": 20,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间题": {
+          "whole_answer_passed": 19,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "whole_answer_passed": 12,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 5,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 4,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "whole_answer_passed": 25,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 5,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "生日": {
+          "whole_answer_passed": 31,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 5,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "whole_answer_passed": 27,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 14,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "相似事件": {
+          "whole_answer_passed": 20,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "相对日期": {
+          "whole_answer_passed": 20,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "真实变化": {
+          "whole_answer_passed": 27,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "称呼条件": {
+          "whole_answer_passed": 29,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "第三方事实": {
+          "whole_answer_passed": 56,
+          "total": 114,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 22,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 22,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 28,
+              "groups": 28
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 6,
+              "total": 28,
+              "groups": 28
+            }
+          ]
+        },
+        "纠错": {
+          "whole_answer_passed": 24,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "whole_answer_passed": 25,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "职业": {
+          "whole_answer_passed": 24,
+          "total": 51,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "计划": {
+          "whole_answer_passed": 35,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 7,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "whole_answer_passed": 33,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 14,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 4,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "资料不足": {
+          "whole_answer_passed": 30,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 5,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "转述": {
+          "whole_answer_passed": 18,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "边界": {
+          "whole_answer_passed": 48,
+          "total": 68,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 13,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 9,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 17,
+              "groups": 17
+            }
+          ]
+        }
+      }
+    },
+    "seekmemory": {
+      "label": "SeekMemory",
+      "overall": {
+        "passed": 230,
+        "total": 714
+      },
+      "source_report_sha256": "6cd7508f3a612919dae1004ede239c93e61e99d5484eb8c583781b897395bfdb",
+      "source_judgments_sha256": "eff43dd4bb52912cdc91d41d6be62e9b734fc7645f9797adaa7c9462feb4eb3f",
+      "topics": {
+        "假设": {
+          "whole_answer_passed": 21,
+          "total": 49,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "偏好": {
+          "whole_answer_passed": 17,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 19,
+              "groups": 19
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "whole_answer_passed": 6,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 4,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 2,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "分散的线索": {
+          "whole_answer_passed": 4,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 4,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "whole_answer_passed": 11,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "whole_answer_passed": 16,
+          "total": 59,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "改口": {
+          "whole_answer_passed": 14,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "whole_answer_passed": 28,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间约定": {
+          "whole_answer_passed": 11,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间题": {
+          "whole_answer_passed": 4,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 4,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "whole_answer_passed": 12,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "whole_answer_passed": 23,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 3,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "生日": {
+          "whole_answer_passed": 14,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "whole_answer_passed": 21,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "相似事件": {
+          "whole_answer_passed": 11,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "相对日期": {
+          "whole_answer_passed": 5,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 5,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "真实变化": {
+          "whole_answer_passed": 11,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "称呼条件": {
+          "whole_answer_passed": 14,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "第三方事实": {
+          "whole_answer_passed": 26,
+          "total": 114,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 21,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 28,
+              "groups": 28
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 28,
+              "groups": 28
+            }
+          ]
+        },
+        "纠错": {
+          "whole_answer_passed": 12,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "whole_answer_passed": 15,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "职业": {
+          "whole_answer_passed": 16,
+          "total": 51,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "计划": {
+          "whole_answer_passed": 22,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "whole_answer_passed": 26,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "资料不足": {
+          "whole_answer_passed": 27,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "转述": {
+          "whole_answer_passed": 11,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "边界": {
+          "whole_answer_passed": 37,
+          "total": 68,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 9,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 7,
+              "total": 17,
+              "groups": 17
+            }
+          ]
+        }
+      }
+    },
+    "digital-life-core": {
+      "label": "digital-life-core",
+      "overall": {
+        "passed": 233,
+        "total": 714
+      },
+      "source_report_sha256": "903cb3d34bffcde237935899dda2bc906836558374806319f2e2110a3e69c818",
+      "source_judgments_sha256": "0281f87faded6f57d10fecf6998850d5a6eebfa8f8ae1b4a401feffc1e63dac6",
+      "topics": {
+        "假设": {
+          "whole_answer_passed": 19,
+          "total": 49,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "偏好": {
+          "whole_answer_passed": 16,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 19,
+              "groups": 19
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "whole_answer_passed": 11,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "分散的线索": {
+          "whole_answer_passed": 7,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 5,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 1,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "whole_answer_passed": 17,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "whole_answer_passed": 19,
+          "total": 59,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "改口": {
+          "whole_answer_passed": 12,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "whole_answer_passed": 28,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间约定": {
+          "whole_answer_passed": 12,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间题": {
+          "whole_answer_passed": 9,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "whole_answer_passed": 9,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "whole_answer_passed": 20,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 3,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 2,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "生日": {
+          "whole_answer_passed": 15,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "whole_answer_passed": 21,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "相似事件": {
+          "whole_answer_passed": 12,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 4,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "相对日期": {
+          "whole_answer_passed": 9,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 2,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "真实变化": {
+          "whole_answer_passed": 15,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "称呼条件": {
+          "whole_answer_passed": 20,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 2,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "第三方事实": {
+          "whole_answer_passed": 26,
+          "total": 114,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 19,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 28,
+              "groups": 28
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 28,
+              "groups": 28
+            }
+          ]
+        },
+        "纠错": {
+          "whole_answer_passed": 11,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "whole_answer_passed": 17,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "职业": {
+          "whole_answer_passed": 13,
+          "total": 51,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "计划": {
+          "whole_answer_passed": 23,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "whole_answer_passed": 21,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 1,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 1,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "资料不足": {
+          "whole_answer_passed": 24,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 5,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 4,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 4,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "转述": {
+          "whole_answer_passed": 10,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 3,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 0,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "边界": {
+          "whole_answer_passed": 34,
+          "total": 68,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 5,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 7,
+              "total": 17,
+              "groups": 17
+            }
+          ]
+        }
+      }
+    },
+    "qwen-rag": {
+      "label": "Qwen RAG",
+      "overall": {
+        "passed": 596,
+        "total": 714
+      },
+      "source_report_sha256": "21337bd1e2fba83714257c12a860091de870c8654a86bef69992f3d9c3ab8ad1",
+      "source_judgments_sha256": "8a5009ef56104da6fe3953b79d7c109db85d148d5f843477e15ee2c20791f755",
+      "topics": {
+        "假设": {
+          "whole_answer_passed": 42,
+          "total": 49,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "偏好": {
+          "whole_answer_passed": 54,
+          "total": 66,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 19,
+              "groups": 19
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 17,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 12,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "共同编的故事": {
+          "whole_answer_passed": 40,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "分散的线索": {
+          "whole_answer_passed": 48,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 13,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 11,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 12,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "助手自己说过的话": {
+          "whole_answer_passed": 49,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 11,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 14,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "带条件或期限的偏好和边界": {
+          "whole_answer_passed": 45,
+          "total": 59,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 14,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 12,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 9,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "改口": {
+          "whole_answer_passed": 40,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "敏感的事": {
+          "whole_answer_passed": 35,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间约定": {
+          "whole_answer_passed": 28,
+          "total": 43,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 6,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "时间题": {
+          "whole_answer_passed": 30,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 7,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 8,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "没解释的矛盾": {
+          "whole_answer_passed": 34,
+          "total": 47,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "没说完要跟进的事": {
+          "whole_answer_passed": 36,
+          "total": 42,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "生日": {
+          "whole_answer_passed": 40,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "用户的基本信息": {
+          "whole_answer_passed": 48,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 14,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 12,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "相似事件": {
+          "whole_answer_passed": 32,
+          "total": 40,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 7,
+              "total": 10,
+              "groups": 10
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 8,
+              "total": 10,
+              "groups": 10
+            }
+          ]
+        },
+        "相对日期": {
+          "whole_answer_passed": 28,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 8,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "真实变化": {
+          "whole_answer_passed": 52,
+          "total": 58,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 13,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 13,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 13,
+              "total": 15,
+              "groups": 15
+            }
+          ]
+        },
+        "称呼条件": {
+          "whole_answer_passed": 45,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 12,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 11,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "第三方事实": {
+          "whole_answer_passed": 89,
+          "total": 114,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 23,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 22,
+              "total": 29,
+              "groups": 29
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 23,
+              "total": 28,
+              "groups": 28
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 21,
+              "total": 28,
+              "groups": 28
+            }
+          ]
+        },
+        "纠错": {
+          "whole_answer_passed": 44,
+          "total": 48,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "约定和欠账": {
+          "whole_answer_passed": 45,
+          "total": 55,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 13,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 12,
+              "total": 16,
+              "groups": 16
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 9,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 11,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "职业": {
+          "whole_answer_passed": 34,
+          "total": 51,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 9,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 8,
+              "total": 13,
+              "groups": 13
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 9,
+              "total": 12,
+              "groups": 12
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 8,
+              "total": 12,
+              "groups": 12
+            }
+          ]
+        },
+        "计划": {
+          "whole_answer_passed": 51,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 14,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 12,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "计划假设梦转述猜测": {
+          "whole_answer_passed": 54,
+          "total": 65,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 13,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 15,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 10,
+              "total": 14,
+              "groups": 14
+            }
+          ]
+        },
+        "资料不足": {
+          "whole_answer_passed": 51,
+          "total": 56,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 15,
+              "total": 15,
+              "groups": 15
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 14,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 11,
+              "total": 14,
+              "groups": 14
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 11,
+              "total": 13,
+              "groups": 13
+            }
+          ]
+        },
+        "转述": {
+          "whole_answer_passed": 31,
+          "total": 44,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 7,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 6,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 9,
+              "total": 11,
+              "groups": 11
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 9,
+              "total": 11,
+              "groups": 11
+            }
+          ]
+        },
+        "边界": {
+          "whole_answer_passed": 62,
+          "total": 68,
+          "cells": [
+            {
+              "days": 0,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 3,
+              "whole_answer_passed": 14,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 15,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            },
+            {
+              "days": 45,
+              "whole_answer_passed": 16,
+              "total": 17,
+              "groups": 17
+            }
+          ]
+        }
+      }
+    }
+  },
+  "question_set_sha256": "0093deb3e6d286e0e977e46ae79b0001917631b9a603bd9986ac33c618cdeac3"
+}

@@ -1,9 +1,13 @@
-# 本轮测试配置与局限
+# 已测项目、配置与局限
 
-这份记录描述 2026-11-01 视频使用的正式实验，不表示这些系统已经在本仓库的公开示例上跑过。上游项目可能继续变化，复查应使用下面固定的 commit。
+这份记录包含之前四期视频、新增三项目合辑，以及早期停下的 dsh-world 试跑，不表示这些系统已经在本仓库的公开示例上跑过。上游项目可能继续变化，复查应使用下面固定的 commit。未完成项目不冒充完整评测。
 
 | 系统 | 作者署名 | 上游与已测版本 |
 | --- | --- | --- |
+| 冷热记忆方案（ARCHEON） | 原无奇变 / ARCHEON999 | [ARCHEON999/Companion-AI-Memory-Context-Token-Optimization](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization) · [`dec675c`](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization/tree/dec675cb01a4a0eb41d770972b783900b3387f87) |
+| SeekMemory | BangBang在coding / NeverENG | [NeverENG/SeekMemory](https://github.com/NeverENG/SeekMemory) · [`8aaa7ee`](https://github.com/NeverENG/SeekMemory/tree/8aaa7eec7a069ec1da6b414d61adc25257e3cd9a) |
+| digital-life-core | 温水 / mashangshui | [mashangshui/digital-life-core](https://github.com/mashangshui/digital-life-core) · [`d984665`](https://github.com/mashangshui/digital-life-core/tree/d984665ff2e452cf9f57d845cfb93bfb9a64b6b1) |
+| dsh-world（旧卷部分试跑） | CyreneAKen | [chenkezhen480/dsh-world](https://github.com/chenkezhen480/dsh-world) · [`1c4ea61`](https://github.com/chenkezhen480/dsh-world/tree/1c4ea61463b90f0af9a873c48e885c5b8d80c794) |
 | dsh-soul | 糖霜Official | [icyaaaww/dsh-soul](https://github.com/icyaaaww/dsh-soul) · [`8a95301`](https://github.com/icyaaaww/dsh-soul/tree/8a953010bdc97b54cb6be2e9b3793ec7a81317a6) |
 | SurfCore | 玛露Marrow | [Mieksido/surfcore](https://github.com/Mieksido/surfcore) · [`59ec306`](https://github.com/Mieksido/surfcore/tree/59ec3066f7d42a0452fae01f170c9a8484d5dbe5) |
 | dsh-rofm | 鄙人乃路人甲 | [wall1234567/dsh-rofm](https://github.com/wall1234567/dsh-rofm) · [`a51ed67`](https://github.com/wall1234567/dsh-rofm/tree/a51ed67607a40ea6d88b38f5ac12b9792eae681a) |
@@ -16,6 +20,36 @@
 既有对话逐轮回放，考试从快照独立进行。作答使用同一 DeepSeek 渠道；本记录不能替代完整 provider 版本快照。发布时间不代表模型参数保证永远不变。
 
 直接聊天与持久记忆分开核验。历史输入不含答案、判据和未来对话；题目答案不反哺其他题。考试模型和记忆维护调用分别记录，固定历史回放本身不要求重生成助手回复。
+
+## 冷热记忆方案（ARCHEON）
+
+按作者公开设计、配置示例和提示词复现，并非直接运行作者交付的完整程序。逐逻辑日整理记忆卡，近期内容常驻，旧内容逐步摘要并放入冷库；提问时判断线索，最多召回三条旧记忆，另加最近六轮。复现使用本地 bge 向量检索，阈值沿用示例配置。
+
+已完成新卷 714 题，整题通过 356 题。成绩同时受我们复现方式影响，不能写成作者原版成品程序的实测。见[之前四路完整成绩](../results/2026-11-01-first-four.md)。
+
+## SeekMemory
+
+运行原版 AstrBot 插件，由模拟事件宿主回放固定聊天；没有连接真实平台账号。原始消息作为证据存储，原插件负责提取、整理和召回，再加最近六轮交给统一作答模型。
+
+**本次开启定时整理和 Dream，关闭空闲抽取，用测试时钟推进原生后台整理。** 开启机制不等于每次整理都成功；提取失败和运行中断保留记录，考试使用当时实际已有的记忆，不由评测器补答案。
+
+已完成新卷 714 题，整题通过 230 题。早期恢复过程中，评测驱动曾把原插件已重试成功的历史提取错误仍视为失败；这是驱动判断问题，修复记录与插件原始提取失败分别保留，不能全部归咎于上游。
+
+## digital-life-core
+
+原版核心与 memory-v2 在 DSH 内运行。按日期分批通过文档提供的迁移入口导入固定聊天，由原程序决定如何保存记忆；考试从原生对话入口进行，使用原生记忆投影和工具，另外带最近六轮。
+
+本次关闭联网、自改源码、后台定时 Dream 和主动唤醒，不代表默认实时聊天模式，也不评自主生活能力。已完成新卷 714 题，整题通过 233 题。
+
+固定版本中自带的 `energy-stipend` 模块缺少宿主调用的 `getPromptContext`，出现接口错误；宿主捕获后继续，相关上下文为空。保留这一观察，没有在测试里静默修改上游；尚未证明该错误导致记忆丢失或某道题失分，不能用它解释全部低分。
+
+## dsh-world
+
+此前在真实 DSH 中进行原生试跑，聊天按原生存档写入，按逻辑时间触发每日回顾。观察到每日回顾可完成，但自动压缩状态可能保持 idle；不把“回顾完成”说成每次都压缩成功。
+
+本项目后来达到单项目预算停止线，按用户决定保留现有结果并停止。**它没有参加当前 714 题新卷的完整考试，因此没有可与上面新卷直接比较的完整成绩。** 这代表测试覆盖不足，不是零分，也不是声明项目不具备记忆能力。
+
+旧卷曾出现回顾进程退出，当时缺少退出码和错误输出，根因未确认。旧运行还包含工具权限收紧前后的混合条件：后来禁用命令和联网，并限制文件访问范围。这些差异必须保留，不能称为完全默认环境的统一实验。
 
 ## dsh-soul
 
@@ -48,3 +82,7 @@
 本地运行记录中的嵌入标识为 `qwen3.7-text-embedding`，重排标识为 `qwen3.7-text-rerank`，维度 2,560。这里只记录本轮使用标识，不宣称它们是任何时间、任何地区均可用的默认型号。
 
 本轮沿用已有答案和判分，未重复跑 Qwen。这个对照衡量的是“找出相关旧话再作答”的整套流程，不是只测试一个嵌入模型的裸能力。
+
+## 早期还跑过的诊断对照
+
+旧卷中还试跑过无记忆、最近 20 轮、全量上下文、朴素向量检索，以及“一律含糊”“全倒出来”两种检验判分是否有效的反例。这些不是新增社区项目；旧卷评分、样本覆盖与当前新卷不同，不并入当前成绩表，也不把全量上下文当作长期记忆机制的成绩。
