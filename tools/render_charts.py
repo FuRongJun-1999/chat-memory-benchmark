@@ -10,10 +10,12 @@ DATA = ROOT / 'charts/2026-11-01/data.json'
 W, H = 1800, 2200
 C = {'paper': '#f4f8ff', 'ink': '#102b52', 'muted': '#506783', 'blue': '#2961f4',
      'teal': '#007f91', 'line': '#d6e3f2', 'white': '#ffffff'}
-AUTHORS = {'qwen-rag': '嵌入召回＋重排，对照流程', 'dsh-soul': '糖霜Official',
-           'archeon-hotcold': '原无奇变 · 按方案复现', 'dsh-rofm': '鄙人乃路人甲 · 测试阈值',
-           'digital-life-core': '温水', 'seekmemory': 'BangBang在coding · 开启 Dream',
+AUTHORS = {'qwen-rag': 'Qwen 模型团队', 'dsh-soul': '糖霜Official',
+           'archeon-hotcold': '原无奇变', 'dsh-rofm': '鄙人乃路人甲',
+           'digital-life-core': '温水', 'seekmemory': 'BangBang在coding',
            'surfcore': '玛露Marrow'}
+CONFIG_NOTES = {'qwen-rag': '本评测搭建的检索对照', 'archeon-hotcold': '按公开方案复现',
+                'dsh-rofm': '使用测试归档阈值', 'seekmemory': '开启 Dream'}
 GROUPS = [
     ('基本信息与偏好', [
         ('用户的基本信息', '用户明确说过的资料，能否记对？'),
@@ -107,7 +109,10 @@ def overall(data, order, destination):
         y = 500 + i * 185
         color = C['teal'] if key == 'qwen-rag' else C['blue']
         s.text(80, y, entry['label'], 43, bold=True)
-        s.text(82, y + 43, AUTHORS[key], 26, C['muted'])
+        credit = ('模型：' if key == 'qwen-rag' else '作者：') + AUTHORS[key]
+        s.text(82, y + 43, credit, 26, C['muted'])
+        if key in CONFIG_NOTES:
+            s.text(82, y + 79, CONFIG_NOTES[key], 24, C['muted'])
         ratio = entry['passed'] / entry['total']
         s.rect(x0, y - 46, width, 66, '#e5edf8', 8)
         s.rect(x0, y - 46, width * ratio, 66, color, 8)
@@ -137,8 +142,10 @@ def costs(data, order, destination):
         y = 500 + i * 185
         color = C['teal'] if key == 'qwen-rag' else C['blue']
         s.text(80, y, entry['label'], 43, bold=True)
-        suffix = ' · 中断保留' if key == 'dsh-rofm' else ''
-        s.text(82, y + 43, f'{cost["completed_answers"]} 题已完成{suffix}', 27, C['muted'])
+        credit = ('模型：' if key == 'qwen-rag' else '作者：') + AUTHORS[key]
+        s.text(82, y + 43, credit, 26, C['muted'])
+        suffix = ' · 中断保留' if key == 'dsh-rofm' else (' · 本评测搭建对照' if key == 'qwen-rag' else '')
+        s.text(82, y + 79, f'{cost["completed_answers"]} 题已完成{suffix}', 24, C['muted'])
         s.rect(x0, y - 46, width, 66, '#e5edf8', 8)
         s.rect(x0, y - 46, width * cost['cny'] / axis_max, 66, color, 8)
         s.text(1720, y + 3, f'¥ {cost["cny"]:.2f}', 59, color, bold=True, anchor='end')
@@ -158,15 +165,18 @@ def heat_color(ratio):
 def topic_sheet(data, order, title, group, page, destination):
     s = Sheet(title, '每格显示：通过题数 / 该格实际题数；时间从相关事实最后一次提及开始算', page)
     x0, col = 250, 210
-    s.text(82, 311, '提问间隔', 27, C['muted'])
+    s.text(82, 306, '提问间隔', 27, C['muted'])
+    s.text(82, 340, '作者', 22, C['muted'])
     for i, key in enumerate(order):
         label = data['systems'][key]['label']
-        s.text(x0 + i * col + col / 2, 311, label, 25 if len(label) > 12 else 28,
+        s.text(x0 + i * col + col / 2, 306, label, 25 if len(label) > 12 else 28,
                C['teal'] if key == 'qwen-rag' else C['ink'], bold=True, anchor='middle')
-    s.line(80, 330, 1720, 330)
-    block = 269 if len(group) == 6 else 316
+        s.text(x0 + i * col + col / 2, 340, AUTHORS[key], 21, C['muted'], anchor='middle')
+    s.text(82, 373, 'Qwen 列为本评测搭建的检索对照。', 22, C['muted'])
+    s.line(80, 391, 1720, 391)
+    block = 258 if len(group) == 6 else 304
     for j, (topic, description) in enumerate(group):
-        top = 378 + j * block
+        top = 432 + j * block
         s.text(82, top, f'{topic}  ·  {description}', 31, bold=True)
         for row in range(5):
             y = top + 53 + row * 39
@@ -181,7 +191,7 @@ def topic_sheet(data, order, title, group, page, destination):
                 s.rect(x + 4, y - 29, col - 8, 35, '#dbe6f5' if is_total else heat_color(p / n if n else 0), 4)
                 s.text(x + col / 2, y, f'{p} / {n}' if n else '未测', 29, bold=is_total, anchor='middle')
         if j < len(group) - 1:
-            s.line(80, top + block - 26, 1720, top + block - 26)
+            s.line(80, top + block - 40, 1720, top + block - 40)
     s.text(80, 2026, '颜色越深，通过率越高。考点互有重叠，不能把各考点题数相加。', 26, C['muted'])
     s.text(80, 2067, '基于七路共同的 687 题；ROFM 中断后，部分时间格不足原定十组。', 26, C['muted'])
     s.save(destination / f'{page:02d}-topics.svg')
