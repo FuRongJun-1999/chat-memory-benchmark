@@ -11,13 +11,17 @@
 | dsh-soul | 糖霜Official | [icyaaaww/dsh-soul](https://github.com/icyaaaww/dsh-soul) · [`8a95301`](https://github.com/icyaaaww/dsh-soul/tree/8a953010bdc97b54cb6be2e9b3793ec7a81317a6) |
 | SurfCore | 玛露Marrow | [Mieksido/surfcore](https://github.com/Mieksido/surfcore) · [`59ec306`](https://github.com/Mieksido/surfcore/tree/59ec3066f7d42a0452fae01f170c9a8484d5dbe5) |
 | dsh-rofm | 鄙人乃路人甲 | [wall1234567/dsh-rofm](https://github.com/wall1234567/dsh-rofm) · [`a51ed67`](https://github.com/wall1234567/dsh-rofm/tree/a51ed67607a40ea6d88b38f5ac12b9792eae681a) |
+| dsh-rofm 1.4.2（重测） | 鄙人乃路人甲 | [wall1234567/dsh-rofm](https://github.com/wall1234567/dsh-rofm) · [`ef3e20e`](https://github.com/wall1234567/dsh-rofm/tree/ef3e20e30582b59bddb9308c629793b44bfc567f) |
+| OpenViking 0.5.2.1 | 火山引擎 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) · [`f5e6203`](https://github.com/volcengine/OpenViking/tree/f5e6203033a13469c3d9a937f2ca39492ea69c51) |
+| Suzu 原生重测 | eryucheng | [eryucheng/dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory)，使用 Suzu core `645c862470b1a207c9904e614083f8b77a8f15bf` |
+| Hindsight 1.2.0 | Vectorize | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) · [`34a1386`](https://github.com/vectorize-io/hindsight/tree/34a138684a899b6ec34175f7a2b633860466d289) |
 | Qwen RAG | 本评测搭建的对照 | Qwen 嵌入、重排，加统一作答模型；不是另一个社区记忆项目 |
 
 作者署名按提交测试时提供的信息记录。仓库仅链接上游，不包含其代码或表示其背书。
 
 ## 共用设置
 
-既有对话逐轮回放，考试从快照独立进行。作答使用同一 DeepSeek 渠道；本记录不能替代完整 provider 版本快照。发布时间不代表模型参数保证永远不变。
+既有对话逐轮回放，考试使用对应截止点的记忆。作答使用 DeepSeek；不同批次可能使用不同渠道，Suzu 重测中途由 OpenCode Go 切换到 DeepSeek 官方渠道。本记录不能替代完整 provider 版本快照。发布时间不代表模型参数保证永远不变。
 
 直接聊天与持久记忆分开核验。历史输入不含答案、判据和未来对话；题目答案不反哺其他题。考试模型和记忆维护调用分别记录，固定历史回放本身不要求重生成助手回复。
 
@@ -74,6 +78,26 @@
 另观察到模型提交不存在的文件夹 ID，原生工具进行了拒绝；这不等同于证明纯粹的代码错误。
 
 早期适配器曾把过小窗口带到考试阶段，压缩掉当前考题，且维护输出上限过小造成截断。这些属于评测侧问题，相关旧结果已撤出本轮比较。当前结果只使用修订后的实验，仍保留上述系统在测试配置下的中断限制。
+
+## OpenViking 0.5.2.1
+
+使用独立服务处理各人物的历史和记忆；考试按该题可见历史前缀读取快照，直接对话最多保留最近六轮，未额外接入 RAG。完成 714 题，Codex 初判 555 题通过。
+
+## Suzu 原生重测
+
+按 Suzu core 原生机制增量处理历史，在各考试节点整理待处理的历史，并提供最近六轮及记忆检索工具。每次工具检索默认和最多返回 10 条、最多 10,976 字符，每题最多检索 6 次；不是整题合计只能召回 10 条。使用 `text-embedding-v4`、1,024 维。重测完成 714 题，Codex 初判 516 题通过。
+
+本次由作答模型决定是否调用 Suzu 检索工具，没有在每题开头强制检索；714 题中有 351 题未调用该工具。按题目各项事实标注的证据轮次与最近六轮交集粗算，其中 185 题每项事实至少一处证据在最近六轮，25 题部分命中，141 题没有命中；这 141 题中 108 题未通过。证据轮次命中不保证具体内容足以单独答题，也不能据此断言所有未通过均由未检索导致。
+
+此前测试在清理直接上下文前没有先整理未归档尾段，旧的 329 / 714 不作为公平成绩。本次采用修正后的接入；两个成绩分别保留，不混算。
+
+## Hindsight 1.2.0
+
+按时间戳增量写入既有用户与助手对话，每个考试节点克隆独立记忆库并使用原生召回，另提供最近六轮；考题和答案不写回历史。嵌入与重排使用 Hindsight 本地默认设置。714 题 Codex 初判通过 513 题。
+
+## dsh-rofm 1.4.2 重测
+
+使用 8,000 token 测试窗口，考试时保留原生未归档会话尾段以及原生记忆。714 题 Codex 初判通过 471 题；Qwen 对照沿用原有 596 题通过。这次重测与上面旧版中断的 687 题结果分列，接入与题数不同，不合并成一条成绩。
 
 ## Qwen RAG 对照
 

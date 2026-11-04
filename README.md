@@ -18,7 +18,7 @@
 
 ## 已经测过哪些
 
-共 **7 个社区项目／方案，加 1 个 Qwen RAG 对照**。下面是项目目录，不是混合排名：完整卷、共同已答题和旧卷试跑的范围不同，比较请看各行链接里的同卷成绩。
+共 **10 个社区项目／方案，加 1 个 Qwen RAG 对照**。下面是项目目录，不是混合排名：完整卷、共同已答题和旧卷试跑的范围不同，比较请看各行链接里的同卷成绩。
 
 | 项目／上游 | 作者 | 测试状态与成绩（通过 / 已答） |
 | --- | --- | --- |
@@ -28,7 +28,10 @@
 | [dsh-world](https://github.com/chenkezhen480/dsh-world) | CyreneAKen | **旧卷部分试跑，按预算停测**；未参加新卷完整比较，见[运行说明](docs/tested-configurations.md#dsh-world) |
 | [dsh-soul](https://github.com/icyaaaww/dsh-soul) | 糖霜Official | 完整卷 418 / 714；合辑共同题 [402 / 687](results/2026-11-01.md) |
 | [SurfCore](https://github.com/Mieksido/surfcore) | 玛露Marrow | 完整卷 123 / 714；合辑共同题 [122 / 687](results/2026-11-01.md) |
-| [dsh-rofm](https://github.com/wall1234567/dsh-rofm) | 鄙人乃路人甲 | 降低测试归档阈值后中断；已答 [242 / 687](results/2026-11-01.md)，另有 27 题未答 |
+| [dsh-rofm](https://github.com/wall1234567/dsh-rofm) | 鄙人乃路人甲 | 1.4.2 重测初判 [471 / 714](results/2026-11-04.md)；旧版测试中断，保留 [242 / 687](results/2026-11-01.md) |
+| [OpenViking](https://github.com/volcengine/OpenViking) | 火山引擎 | 0.5.2.1 初判 [555 / 714](results/2026-11-04.md) |
+| [dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory) | eryucheng | 修正接入后原生重测初判 [516 / 714](results/2026-11-04.md) |
+| [Hindsight](https://github.com/vectorize-io/hindsight) | Vectorize | 1.2.0 初判 [513 / 714](results/2026-11-04.md) |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
 
 各项目的固定版本、实际接入方式、维护开关和局限统一放在[测试配置与局限](docs/tested-configurations.md)。作者署名沿用评测登记信息。
@@ -43,6 +46,7 @@
 | 核对所有已测系统版本和配置 | [测试配置与局限](docs/tested-configurations.md) |
 | 看之前四期的完整成绩 | [冷热方案、SeekMemory、digital-life-core、Qwen：714 题](results/2026-11-01-first-four.md) |
 | 看新增三项目合辑的成绩 | [Soul、SurfCore、ROFM、Qwen：共同 687 题](results/2026-11-01.md) |
+| 看最新测试和重测 | [OpenViking、Suzu、Hindsight、ROFM、Qwen：714 题初判](results/2026-11-04.md) |
 | 了解哪些公开、哪些保留 | [发布范围](docs/publication.md) |
 
 ## 五分钟运行公开示例
