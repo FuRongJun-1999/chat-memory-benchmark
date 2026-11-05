@@ -1,13 +1,12 @@
 # 已测项目、配置与局限
 
-这份记录包含之前四期视频、新增三项目合辑，以及早期停下的 dsh-world 试跑，不表示这些系统已经在本仓库的公开示例上跑过。上游项目可能继续变化，复查应使用下面固定的 commit。未完成项目不冒充完整评测。
+这份记录列出已出成绩的项目、上游版本和测试配置。上游项目可能继续变化，复查应使用下面固定的 commit。
 
 | 系统 | 作者署名 | 上游与已测版本 |
 | --- | --- | --- |
 | 冷热记忆方案（ARCHEON） | 原无奇变 / ARCHEON999 | [ARCHEON999/Companion-AI-Memory-Context-Token-Optimization](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization) · [`dec675c`](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization/tree/dec675cb01a4a0eb41d770972b783900b3387f87) |
 | SeekMemory | BangBang在coding / NeverENG | [NeverENG/SeekMemory](https://github.com/NeverENG/SeekMemory) · [`8aaa7ee`](https://github.com/NeverENG/SeekMemory/tree/8aaa7eec7a069ec1da6b414d61adc25257e3cd9a) |
 | digital-life-core | 温水 / mashangshui | [mashangshui/digital-life-core](https://github.com/mashangshui/digital-life-core) · [`d984665`](https://github.com/mashangshui/digital-life-core/tree/d984665ff2e452cf9f57d845cfb93bfb9a64b6b1) |
-| dsh-world（旧卷部分试跑） | CyreneAKen | [chenkezhen480/dsh-world](https://github.com/chenkezhen480/dsh-world) · [`1c4ea61`](https://github.com/chenkezhen480/dsh-world/tree/1c4ea61463b90f0af9a873c48e885c5b8d80c794) |
 | dsh-soul | 糖霜Official | [icyaaaww/dsh-soul](https://github.com/icyaaaww/dsh-soul) · [`8a95301`](https://github.com/icyaaaww/dsh-soul/tree/8a953010bdc97b54cb6be2e9b3793ec7a81317a6) |
 | SurfCore | 玛露Marrow | [Mieksido/surfcore](https://github.com/Mieksido/surfcore) · [`59ec306`](https://github.com/Mieksido/surfcore/tree/59ec3066f7d42a0452fae01f170c9a8484d5dbe5) |
 | dsh-rofm | 鄙人乃路人甲 | [wall1234567/dsh-rofm](https://github.com/wall1234567/dsh-rofm) · [`a51ed67`](https://github.com/wall1234567/dsh-rofm/tree/a51ed67607a40ea6d88b38f5ac12b9792eae681a) |
@@ -47,14 +46,6 @@
 本次关闭联网、自改源码、后台定时 Dream 和主动唤醒，不代表默认实时聊天模式，也不评自主生活能力。已完成新卷 714 题，整题通过 233 题。
 
 固定版本中自带的 `energy-stipend` 模块缺少宿主调用的 `getPromptContext`，出现接口错误；宿主捕获后继续，相关上下文为空。保留这一观察，没有在测试里静默修改上游；尚未证明该错误导致记忆丢失或某道题失分，不能用它解释全部低分。
-
-## dsh-world
-
-此前在真实 DSH 中进行原生试跑，聊天按原生存档写入，按逻辑时间触发每日回顾。观察到每日回顾可完成，但自动压缩状态可能保持 idle；不把“回顾完成”说成每次都压缩成功。
-
-本项目后来达到单项目预算停止线，按用户决定保留现有结果并停止。**它没有参加当前 714 题新卷的完整考试，因此没有可与上面新卷直接比较的完整成绩。** 这代表测试覆盖不足，不是零分，也不是声明项目不具备记忆能力。
-
-旧卷曾出现回顾进程退出，当时缺少退出码和错误输出，根因未确认。旧运行还包含工具权限收紧前后的混合条件：后来禁用命令和联网，并限制文件访问范围。这些差异必须保留，不能称为完全默认环境的统一实验。
 
 ## dsh-soul
 
