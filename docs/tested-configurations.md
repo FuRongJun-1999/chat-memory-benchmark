@@ -14,6 +14,7 @@
 | dsh-rofm 1.4.2（重测） | 鄙人乃路人甲 | [wall1234567/dsh-rofm](https://github.com/wall1234567/dsh-rofm) · [`ef3e20e`](https://github.com/wall1234567/dsh-rofm/tree/ef3e20e30582b59bddb9308c629793b44bfc567f) |
 | OpenViking 0.5.2.1 | 火山引擎 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) · [`f5e6203`](https://github.com/volcengine/OpenViking/tree/f5e6203033a13469c3d9a937f2ca39492ea69c51) |
 | Suzu 原生重测 | eryucheng | [eryucheng/dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory)，使用 Suzu core `645c862470b1a207c9904e614083f8b77a8f15bf` |
+| Suzu 强制原生检索重测 | eryucheng | [eryucheng/dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory)，同一 Suzu core `645c862470b1a207c9904e614083f8b77a8f15bf` |
 | Hindsight 1.2.0 | Vectorize | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) · [`34a1386`](https://github.com/vectorize-io/hindsight/tree/34a138684a899b6ec34175f7a2b633860466d289) |
 | Qwen RAG | 本评测搭建的对照 | Qwen 嵌入、重排，加统一作答模型；不是另一个社区记忆项目 |
 
@@ -90,6 +91,12 @@
 本次由作答模型决定是否调用 Suzu 检索工具，没有在每题开头强制检索；714 题中有 351 题未调用该工具。按题目各项事实标注的证据轮次与最近六轮交集粗算，其中 185 题每项事实至少一处证据在最近六轮，25 题部分命中，141 题没有命中；这 141 题中 108 题未通过。证据轮次命中不保证具体内容足以单独答题，也不能据此断言所有未通过均由未检索导致。
 
 此前测试在清理直接上下文前没有先整理未归档尾段，旧的 329 / 714 不作为公平成绩。本次采用修正后的接入；两个成绩分别保留，不混算。
+
+## Suzu 强制原生检索重测
+
+使用同一份六人物、714 题题库及相同 Suzu core，逐轮处理历史，在考试节点先完成原生记忆整理。每题以问题原文强制调用一次 Suzu 原生检索，最多返回 10 条，再与最近六轮对话一起交给 DeepSeek 官方渠道作答；向量模型为 `text-embedding-v4`，1,024 维。本轮不保存记忆快照。
+
+714 题均执行检索，5 题没有匹配结果；整题初判通过 **621 / 714**。Qwen 对照复用此前的 **596 / 714**，其语义检索最多取 40 条候选、重排至最多 10 条，使用的调用渠道和检索流程与 Suzu 不同。完整成绩及分考点结果见[本轮报告](../results/2026-11-05-suzu-forced.md)。
 
 ## Hindsight 1.2.0
 

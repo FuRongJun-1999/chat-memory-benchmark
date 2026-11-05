@@ -8,13 +8,13 @@
 
 ## 用图片看结果
 
-本轮制作了 **7 张 1800 × 2200 高清图**：测试消费、总成绩，以及覆盖全部 27 个考点的 5 张分组图。费用只计当前成绩对应批次；成绩统一比较七路共同已答的 687 题。
+最新制作了 **7 张 1800 × 2200 高清图**：Suzu 强制原生检索与 Qwen 对照的测试消费、总成绩，以及覆盖全部 27 个考点的 5 张分组图，比较同一批 714 题。
 
-[查看全部图片、SVG 原图与统计说明](charts/2026-11-01/README.md)
+[查看 Suzu 和 Qwen 的七张图](charts/2026-11-05-suzu-forced/README.md) · [查看之前七路共同题图集](charts/2026-11-01/README.md)
 
-![当前成绩对应批次的测试消费，人民币](charts/2026-11-01/01-cost.png)
+![Suzu 和 Qwen 测试消费，人民币](charts/2026-11-05-suzu-forced/01-cost.png)
 
-![七路共同 687 题总成绩](charts/2026-11-01/02-overall.png)
+![Suzu 和 Qwen 的 714 题总成绩](charts/2026-11-05-suzu-forced/02-overall.png)
 
 ## 已经测过哪些
 
@@ -30,7 +30,7 @@
 | [SurfCore](https://github.com/Mieksido/surfcore) | 玛露Marrow | 完整卷 123 / 714；合辑共同题 [122 / 687](results/2026-11-01.md) |
 | [dsh-rofm](https://github.com/wall1234567/dsh-rofm) | 鄙人乃路人甲 | 1.4.2 重测初判 [471 / 714](results/2026-11-04.md)；旧版测试中断，保留 [242 / 687](results/2026-11-01.md) |
 | [OpenViking](https://github.com/volcengine/OpenViking) | 火山引擎 | 0.5.2.1 初判 [555 / 714](results/2026-11-04.md) |
-| [dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory) | eryucheng | 修正接入后原生重测初判 [516 / 714](results/2026-11-04.md) |
+| [dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory) | eryucheng | 强制原生检索重测初判 [621 / 714](results/2026-11-05-suzu-forced.md)；自主决定是否检索的上一轮 [516 / 714](results/2026-11-04.md) |
 | [Hindsight](https://github.com/vectorize-io/hindsight) | Vectorize | 1.2.0 初判 [513 / 714](results/2026-11-04.md) |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
 
@@ -47,6 +47,7 @@
 | 看之前四期的完整成绩 | [冷热方案、SeekMemory、digital-life-core、Qwen：714 题](results/2026-11-01-first-four.md) |
 | 看新增三项目合辑的成绩 | [Soul、SurfCore、ROFM、Qwen：共同 687 题](results/2026-11-01.md) |
 | 看最新测试和重测 | [OpenViking、Suzu、Hindsight、ROFM、Qwen：714 题初判](results/2026-11-04.md) |
+| 看 Suzu 强制检索重测 | [Suzu 与 Qwen：714 题初判](results/2026-11-05-suzu-forced.md) |
 | 了解哪些公开、哪些保留 | [发布范围](docs/publication.md) |
 
 ## 五分钟运行公开示例
