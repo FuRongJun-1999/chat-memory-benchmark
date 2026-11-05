@@ -41,6 +41,7 @@
 | --- | --- |
 | 看考什么、怎么判 | [测试方法](docs/methodology.md) |
 | 下载完整正式测试集 | [六人物正式测试集](datasets/README.md) |
+| 给自己的测试回答判分 | [判分工具、证据和使用方法](grading/README.md) |
 | 直接看示例题、答案和证据 | 下载仓库后打开 [示例题.html](demo/示例题.html)，或在线读 [示例题.md](demo/示例题.md) |
 | 把示例接到自己的系统 | [接入说明](docs/integration.md)、[读题工具](demo/read_exam.py) |
 | 核对所有已测系统版本和配置 | [测试配置与局限](docs/tested-configurations.md) |
