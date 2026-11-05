@@ -78,7 +78,7 @@ class Sheet:
         self.text(84, 234, subtitle, 31, C['muted'])
         self.line(80, 2090, 1720, 2090)
         self.text(80, 2140, '大肥鱼 · 记忆系统评测', 30, bold=True)
-        self.text(80, 2179, 'github.com/Ornn8/memory-system-benchmark', 23, C['muted'])
+        self.text(80, 2179, 'github.com/Ornn8/chat-memory-benchmark', 23, C['muted'])
         self.text(1720, 2141, f'{page} / 7', 30, C['muted'], anchor='end')
         self.text(1720, 2179, '2026-11-01 · 固定版本实验', 23, C['muted'], anchor='end')
 

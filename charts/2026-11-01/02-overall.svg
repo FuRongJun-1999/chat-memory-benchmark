@@ -6,7 +6,7 @@
 <text x="84" y="234" font-size="31" fill="#506783" font-weight="400" text-anchor="start">固定六个人物 · 最长半年 · 每天约两轮 · 所有系统使用相同题目集合</text>
 <line x1="80" y1="2090" x2="1720" y2="2090" stroke="#d6e3f2" stroke-width="2"/>
 <text x="80" y="2140" font-size="30" fill="#102b52" font-weight="700" text-anchor="start">大肥鱼 · 记忆系统评测</text>
-<text x="80" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="start">github.com/Ornn8/memory-system-benchmark</text>
+<text x="80" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="start">github.com/Ornn8/chat-memory-benchmark</text>
 <text x="1720" y="2141" font-size="30" fill="#506783" font-weight="400" text-anchor="end">2 / 7</text>
 <text x="1720" y="2179" font-size="23" fill="#506783" font-weight="400" text-anchor="end">2026-11-01 · 固定版本实验</text>
 <text x="80" y="337" font-size="36" fill="#102b52" font-weight="700" text-anchor="start">整题通过数 / 共同已答题数</text>

@@ -24,7 +24,7 @@ python grading/grade.py prepare --answers answers.jsonl --out packets.jsonl
 
 ## 3. 判断回答
 
-把 [`judge-prompt.md`](judge-prompt.md) 和 `packets.jsonl` 交给 Codex 或人工判分，按提示逐行写成 `reviews.jsonl`。`required` 必须与该题 `rubric.required` 顺序对应，两个 SHA-256 从对应题的材料原样复制。可以分批判断，最终合并为一个文件，每题一行。
+把 [`judge-prompt.md`](judge-prompt.md) 和 `packets.jsonl` 交给 Codex 判分，按提示逐行写成 `reviews.jsonl`。`required` 必须与该题 `rubric.required` 顺序对应，两个 SHA-256 从对应题的材料原样复制。可以分批判断，最终合并为一个文件，每题一行。
 
 ## 4. 汇总成绩
 

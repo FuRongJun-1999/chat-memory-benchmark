@@ -1,10 +1,21 @@
-# 大肥鱼 · 记忆系统评测
+# 大肥鱼 · 聊天记忆系统评测
 
 各种记忆框架，到底能记住什么，又会忘掉什么？这个项目把长时间聊天中的事实、改口、约定和边界整理成可检查的题目，用同一套规则比较不同系统。
 
 目前关注**每天约两轮、跨度最长半年**的超轻度聊天场景。一轮指一条用户消息和一条助手回复。它不代表高频聊天、多人群聊或真实用户的全部使用情况。
 
 **现已公开正式六人物测试集：完整合成历史、714 道正式题、评分标准与证据，以及离线读题工具。** 此外保留了独立的单人物示例；示例与正式卷不是同一份数据。
+
+## 交给 Codex 测试
+
+把下面这段话发给 Codex，并填上要测试的项目地址或本地路径：
+
+```text
+请使用 https://github.com/Ornn8/chat-memory-benchmark 测试这个聊天记忆系统：[项目地址或本地路径]。
+请先阅读仓库的测试方法、接入说明和判分说明，再按照六人物正式测试集完成接入、作答和判分，给我总成绩、各考点成绩和测试配置。历史交给被测系统的记忆流程处理，考试时不要把完整历史或标准答案直接交给作答模型。请保留实际回答和判分结果。
+```
+
+Codex 会根据项目的接入方式完成测试，并使用本仓库的判分规则整理成绩。
 
 ## 用图片看结果
 
@@ -56,8 +67,8 @@
 只需 Python 3.10 或更新版本，无第三方依赖、无 API key，也不会产生模型费用。
 
 ```sh
-git clone https://github.com/Ornn8/memory-system-benchmark.git
-cd memory-system-benchmark
+git clone https://github.com/Ornn8/chat-memory-benchmark.git
+cd chat-memory-benchmark
 python demo/read_exam.py --verify-all
 python demo/read_exam.py --id PUB01-C001/d45 --output question.json
 python -m unittest discover -s tests -v
