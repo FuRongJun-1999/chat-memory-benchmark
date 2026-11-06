@@ -1,0 +1,161 @@
+{
+  "dataset": "natural-timegrid-20261101-v2",
+  "systems": [
+    {
+      "name": "qwen-rag",
+      "file": "qwen-rag.jsonl",
+      "answers": 714,
+      "sha256": "ec5e49d15706dba1eefddcc8bc6d4a5d2bcbed993b6e35d9602b5bf45b60c37c"
+    },
+    {
+      "name": "archeon-hotcold",
+      "file": "archeon-hotcold.jsonl",
+      "answers": 714,
+      "sha256": "2fb2e48ec55dd23403bc35e3139e9c7fc6e2cb2535562f0161459d2539434e66"
+    },
+    {
+      "name": "seekmemory",
+      "file": "seekmemory.jsonl",
+      "answers": 714,
+      "sha256": "9f8540d692d21b09172dfe35bf67318c24f05f408761c5a85ee9061a859081d8"
+    },
+    {
+      "name": "digital-life-core",
+      "file": "digital-life-core.jsonl",
+      "answers": 714,
+      "sha256": "3f5dc2a49e16bd085336b90f2e16e0838d02d24c3850362509331339bf7375e3"
+    },
+    {
+      "name": "dsh-soul-v1",
+      "file": "dsh-soul-v1.jsonl",
+      "answers": 714,
+      "sha256": "1702c953b62aabe651562648751a31b4f942bee8b9332d9ed233e90c4c7db872"
+    },
+    {
+      "name": "surfcore",
+      "file": "surfcore.jsonl",
+      "answers": 714,
+      "sha256": "96688b0a25db248a6e52c594792f85c8756b13d0404f356274cf7e78b0804219"
+    },
+    {
+      "name": "dsh-rofm-legacy",
+      "file": "dsh-rofm-legacy.jsonl",
+      "answers": 687,
+      "sha256": "cc6894d593a025abd483be785da744bcfc2cd7524c494b1ada4e2f9cf072ad7b"
+    },
+    {
+      "name": "dsh-rofm-1.4.2",
+      "file": "dsh-rofm-1.4.2.jsonl",
+      "answers": 714,
+      "sha256": "8b16ef356c45d65b7c02d9c72d1f4f74b935ac0c28cb3f9353e54c78ef735691"
+    },
+    {
+      "name": "openviking-0.5.2.1",
+      "file": "openviking-0.5.2.1.jsonl",
+      "answers": 714,
+      "sha256": "d0676cda1b7ee577f81148debab82fce6f83357c2fa758c12ed018e0e8778f0a"
+    },
+    {
+      "name": "hindsight-1.2.0",
+      "file": "hindsight-1.2.0.jsonl",
+      "answers": 714,
+      "sha256": "4f6d8d216e4a9a50f7914f1bcb9a83b45fdcbf6415ec69f0c22ebec5e272ffb3"
+    },
+    {
+      "name": "suzu-autonomous",
+      "file": "suzu-autonomous.jsonl",
+      "answers": 714,
+      "sha256": "81ab355a403c1a55f4892bba1eeaf1cdc0459c630cfb84080fdf6fd416338363"
+    },
+    {
+      "name": "suzu-forced",
+      "file": "suzu-forced.jsonl",
+      "answers": 714,
+      "sha256": "ef6b98785393424da52dbd765109130a94b6ea2a7f4b9fcaf016db86f12e20a4"
+    },
+    {
+      "name": "soul-2.0",
+      "file": "soul-2.0.jsonl",
+      "answers": 714,
+      "sha256": "d8c04e376957a21d7ba7d55eaf6b1da64173920dd429ba564ba87e7f59ab64e7"
+    },
+    {
+      "name": "mnemosyne-v3",
+      "file": "mnemosyne-v3.jsonl",
+      "answers": 714,
+      "sha256": "88c245a0a1fd81ecfb8056d036968abadda46bd952033ffc09e226a7ca23931d"
+    },
+    {
+      "name": "codex-deepseek-starter",
+      "file": "codex-deepseek-starter.jsonl",
+      "answers": 714,
+      "sha256": "36c81d21186c28da0be72c2869bb79b33b0c4849c9ac02b8c4dce9352026b739"
+    },
+    {
+      "name": "lingshu",
+      "file": "lingshu.jsonl",
+      "answers": 714,
+      "sha256": "1aef34ccec7b6e0a336b14e0e0d4f53bf5e0969ba3f5860ded8062c3f044ae2f"
+    },
+    {
+      "name": "memory-brain-0.2.0",
+      "file": "memory-brain-0.2.0.jsonl",
+      "answers": 714,
+      "sha256": "923c413f8dc88f3c2906ad460dae4cf92d7176dc3443ba701ce0ce809d977936"
+    },
+    {
+      "name": "mnemon-vector-partial",
+      "file": "mnemon-vector-partial.jsonl",
+      "answers": 539,
+      "sha256": "e0ba9ae85ba53814880eeb1dd13849d1cd41b371fd542545075b42fa04d50bb3"
+    },
+    {
+      "name": "soul-standalone",
+      "file": "soul-standalone.jsonl",
+      "answers": 714,
+      "sha256": "719c513d6c8b9f7ed6946038aef118739fb3bf103641e4bd4017a549c390f06a"
+    },
+    {
+      "name": "soul-standalone-qwen",
+      "file": "soul-standalone-qwen.jsonl",
+      "answers": 714,
+      "sha256": "1555151cc1e796f2e72eaf326903bf94a4a156ecd725c8121c79f6f57b0168cb"
+    },
+    {
+      "name": "lingshu-standalone",
+      "file": "lingshu-standalone.jsonl",
+      "answers": 714,
+      "sha256": "f6e2bcafd29c4a762fe3f93e11ba8074dbf8c578ffa455875c7a782c05e89549"
+    },
+    {
+      "name": "lingshu-standalone-qwen",
+      "file": "lingshu-standalone-qwen.jsonl",
+      "answers": 714,
+      "sha256": "169be659a475ae16dd20489fb81d89547e5747a24a2516b6470498599596d182"
+    },
+    {
+      "name": "dsh-hippocampus",
+      "file": "dsh-hippocampus.jsonl",
+      "answers": 714,
+      "sha256": "31ac07b075a7e1a46cf0dbde3e1e6e54f8890e45c2d08f67e5e0db2e56069d9c"
+    },
+    {
+      "name": "dsh-memory-calendar",
+      "file": "dsh-memory-calendar.jsonl",
+      "answers": 714,
+      "sha256": "4e93ef6a014d601ef5aab214fa6e57e7daf825f5a9946f7b448b94326a2eaacd"
+    },
+    {
+      "name": "dsh-fish-memory",
+      "file": "dsh-fish-memory.jsonl",
+      "answers": 714,
+      "sha256": "6ee73b129f6801432d7334bbf538ad9abaf05ee7c2ef15262a7a0dba7819a91d"
+    },
+    {
+      "name": "dsh-memory-brain",
+      "file": "dsh-memory-brain.jsonl",
+      "answers": 714,
+      "sha256": "d72c849c192eb231e69b45156f531ba88cac0fb96bfeb14e0fd0af0e737116d5"
+    }
+  ]
+}

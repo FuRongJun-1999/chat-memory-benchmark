@@ -56,6 +56,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | 你想做什么 | 看这里 |
 | --- | --- |
 | 看考什么、怎么判 | [测试方法](docs/methodology.md) |
+| 看各项目的逐题回答 | [逐题答卷](results/answers/README.md) |
 | 下载完整正式测试集 | [六人物正式测试集](datasets/README.md) |
 | 给自己的测试回答判分 | [判分工具、证据和使用方法](grading/README.md) |
 | 直接看示例题、答案和证据 | 下载仓库后打开 [示例题.html](demo/示例题.html)，或在线读 [示例题.md](demo/示例题.md) |

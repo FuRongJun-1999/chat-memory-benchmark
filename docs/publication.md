@@ -5,6 +5,7 @@
 - [完整测试集](../datasets/README.md)
 - [测试方法](methodology.md)
 - [系统成绩](../README.md#已经测过哪些)
+- [各项目逐题答卷](../results/answers/README.md)
 - [独立示例](../demo/README.md)
 
 正式集和示例使用合成人物与对话；正式集考点参考了真实使用场景中的记忆需求。仓库中的数据与自编代码采用 [MIT 许可](../LICENSE)，第三方项目遵循各自的许可。
