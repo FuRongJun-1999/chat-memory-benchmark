@@ -24,3 +24,5 @@
 {"id": "P17-CASE-010/d15", "manual_pass": true, "reason": "5月7日是周四，周末为5月9日和10日，评委理由本身确认日期无误。"}
 {"id": "P20-CASE-009/d03", "manual_pass": true, "reason": "第68轮凌晨回顾晚间试读，第70轮4月24日晚称昨晚，支持4月23日晚，后续有记录支持。"}
 {"id": "P20-CASE-020/d15", "manual_pass": true, "reason": "第210轮时间戳为2026-06-14，评委错误忽略时间戳，日期有依据。"}
+{"id":"P12-ADD-001/d15","manual_pass":false,"reviewer":"Codex（维护者抽查）","answer_sha256":"eb74e02964f6582a669720b1d32f44dd8eb7731c0243118891272a88cde7e738","rubric_sha256":"1e8e0ba0dd846f37916d01a495939e60fceaa6a0b943e4ba06601eedf991fa37","reason":"第106轮只说当时先放原处，后续位置未知；回答据此断言目前仍未挪动，超出证据。"}
+{"id":"P20-CASE-016/d15","manual_pass":false,"reviewer":"Codex（维护者抽查）","answer_sha256":"857e1ede7de269978afccd8cde78a0fb87a2ec8004ca6eaa460e84f7250b32e8","rubric_sha256":"cfc3ada84356f1e8d0e9e1d0eb152a94a296aa462f5afe0116924ae2bfb2c2c1","reason":"原定日期5月5日和换回的手册答对，但回答把存在冲突的实际交换日确定为5月5日；5月8日所说的上周二也不是5月5日。"}
