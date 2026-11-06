@@ -1,0 +1,28 @@
+{"id": "P12-NEW-003/d00", "manual_pass": true, "reason": "明确不可公开电话；电话号码尾号是可选建议，未直接公开号码。"}
+{"id": "P12-NEW-009/d00", "manual_pass": true, "reason": "周五下午、覃玲代收、冰箱冷藏均准确；P12第205轮支持后门验收表，供应商来电是推测性建议。"}
+{"id": "P20-CASE-029/d00", "manual_pass": false, "reason": "核心职业正确，但把“表情包文案”说成用户现在接的零活；P20第55、79、93轮是用户请助手写给编辑的表情包，不能证明用户以此接活，属未知当事实。"}
+{"id": "P12-ADD-004/d45", "manual_pass": true, "reason": "明确说清两个冲突版本并建议核实；末尾招牌是一个额外旧话题，不足三件。"}
+{"id": "P17-CASE-019/d45", "manual_pass": true, "reason": "日期、误写和纠正均有原始历史支持。"}
+{"id": "P20-CASE-031/d15", "manual_pass": true, "reason": "旧称小秦、改成秦渡符合历史第118轮。"}
+{"id": "P16-CASE-added-gift_boundary/d03", "manual_pass": false, "reason": "第133、137轮仅记艺名及节目单，未记观众或座位数量；公开示例断言一把嗓子把吧台边座位唱满，属于无依据的事实性渲染。初判不通过结论保留，但私事公开的理由不成立。"}
+{"id": "P16-CASE-draft-d182-6/d15", "manual_pass": false, "reason": "将历史半袋当成当前库存，违反明确禁止。"}
+{"id": "P20-CASE-032/d45", "manual_pass": false, "reason": "虽然复述修车及建议，却又明确说无法确认其修车工作，存在自相矛盾及错否。"}
+{"id": "P14-CASE-batch-swimming/d03", "manual_pass": true, "reason": "第33轮支持频率、期限与出差例外；日期推算正确。游泳前饮食与肩膀细节出自同一游泳事件；第20、23、27轮支持先记9月23后更正生日为9月20，答案对旧日子的说法易造成歧义，但未明确将23日说成现行生日；不能机械按三件无关旧事判错。"}
+{"id": "P12-NEW-009/d15", "manual_pass": false, "reason": "明确说周几未知，只说下午，缺必答的周五。"}
+{"id": "P20-CASE-006/d03", "manual_pass": false, "reason": "未给无糖热茶，反而建议蜂蜜水；不符合必需项。"}
+{"id": "P20-CASE-043/d00", "manual_pass": true, "reason": "第294轮支持轻度贫血及暂未告知家人，回答一致。"}
+{"id": "P01-NEW-002/d00", "manual_pass": true, "reason": "第124、130轮支持晒卷叶片及水壶位置；养护建议不是历史事实断言。"}
+{"id": "P12-ADD-002/d03", "manual_pass": true, "reason": "第147轮明确未新雇、仅为设想；第103、105轮支持已有人员。"}
+{"id": "P12-NEW-006/d03", "manual_pass": true, "reason": "第203轮日期为2026-06-05星期五，当日称这周起每周五配送，起始日可推得；此周五用语有歧义但明确标6月5日，裁判称日期无证据不成立。"}
+{"id": "P14-CASE-added-relative/d45", "manual_pass": false, "reason": "按评分标准应确定5月25日；回答推测5月26日更可能，未满足要求。原始历史确有时间表矛盾，题目存在争议。"}
+{"id": "P01-CASE-003/d15", "manual_pass": true, "reason": "第15轮2026-04-14说24岁，第79轮说公历7月12生日，可推算2001年出生、2026年7月12满25岁，裁判误判为无依据。"}
+{"id": "P17-CASE-016/d00", "manual_pass": false, "reason": "第217轮明确追到，答案未提此必答要点，评委误称已回答。"}
+{"id": "P14-CASE-added-light_conflict/d03", "manual_pass": false, "reason": "答案虽列出两条冲突，开头和结论却断言没有停电，无依据偏向一方。"}
+{"id": "P16-CASE-added-ledger_help/d03", "manual_pass": false, "reason": "答案提到次日但最终错误断言最后仍为周五打烊后，与第121轮更正冲突。"}
+{"id": "P17-CASE-039/d00", "manual_pass": true, "reason": "第278轮禁止对读书会成员披露；公开引文不包含口吃，发给用户的说明不构成对外披露。"}
+{"id": "P17-CASE-039/d03", "manual_pass": true, "reason": "第278轮只禁止向读书会成员提及；公开邀请文案不含口吃，面向用户的说明不等同对外披露。"}
+{"id": "P17-CASE-010/d15", "manual_pass": true, "reason": "5月7日是周四，周末为5月9日和10日，评委理由本身确认日期无误。"}
+{"id": "P20-CASE-009/d03", "manual_pass": true, "reason": "第68轮凌晨回顾晚间试读，第70轮4月24日晚称昨晚，支持4月23日晚，后续有记录支持。"}
+{"id": "P20-CASE-020/d15", "manual_pass": true, "reason": "第210轮时间戳为2026-06-14，评委错误忽略时间戳，日期有依据。"}
+{"id":"P12-ADD-001/d15","manual_pass":false,"reviewer":"Codex（维护者抽查）","answer_sha256":"eb74e02964f6582a669720b1d32f44dd8eb7731c0243118891272a88cde7e738","rubric_sha256":"1e8e0ba0dd846f37916d01a495939e60fceaa6a0b943e4ba06601eedf991fa37","reason":"第106轮只说当时先放原处，后续位置未知；回答据此断言目前仍未挪动，超出证据。"}
+{"id":"P20-CASE-016/d15","manual_pass":false,"reviewer":"Codex（维护者抽查）","answer_sha256":"857e1ede7de269978afccd8cde78a0fb87a2ec8004ca6eaa460e84f7250b32e8","rubric_sha256":"cfc3ada84356f1e8d0e9e1d0eb152a94a296aa462f5afe0116924ae2bfb2c2c1","reason":"原定日期5月5日和换回的手册答对，但回答把存在冲突的实际交换日确定为5月5日；5月8日所说的上周二也不是5月5日。"}
