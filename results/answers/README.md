@@ -7,3 +7,5 @@
 `dsh-hippocampus`、`dsh-memory-calendar`、`dsh-fish-memory` 和 `dsh-memory-brain` 是近期新完成的六人物答卷；其他文件包括已有成绩的项目、重测和独立运行版本。作者自测的 [neo4j 答卷](../2026-11-05-dsh-neo4j-answers.jsonl)仍保留在原位置。
 
 Hippocampus 和 Calendar 的考试会话调用过各自的记忆写入工具；本次评测保留系统自主产生的记忆行为。
+
+新增 dsh-world 0.7.2 和 dsh-memory-keeper 的六人物答卷。逐题判分和考点汇总见 `results/2026-11-08-dsh-world-0.7.2-*`、`results/2026-11-08-dsh-memory-keeper-*`。

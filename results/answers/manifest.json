@@ -156,6 +156,18 @@
       "file": "dsh-memory-brain.jsonl",
       "answers": 714,
       "sha256": "d72c849c192eb231e69b45156f531ba88cac0fb96bfeb14e0fd0af0e737116d5"
+    },
+    {
+      "name": "dsh-world-0.7.2",
+      "file": "dsh-world-0.7.2.jsonl",
+      "answers": 714,
+      "sha256": "d595a1614e452209a371cbd9de8e05bbd3665f32e5f76881462fa32611c4e09d"
+    },
+    {
+      "name": "dsh-memory-keeper",
+      "file": "dsh-memory-keeper.jsonl",
+      "answers": 714,
+      "sha256": "507339b0b73b2bc58d36baa2fe37584df0956e0ca0c2afa8996df73a7086fd05"
     }
   ]
 }
