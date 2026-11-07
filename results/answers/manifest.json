@@ -168,6 +168,12 @@
       "file": "dsh-memory-keeper.jsonl",
       "answers": 714,
       "sha256": "507339b0b73b2bc58d36baa2fe37584df0956e0ca0c2afa8996df73a7086fd05"
+    },
+    {
+      "name": "whale-card",
+      "file": "whale-card.jsonl",
+      "answers": 714,
+      "sha256": "204b9b83682d5126797881d056f424fc39a7d28be787c32c74b6f47b6b7dab46"
     }
   ]
 }
