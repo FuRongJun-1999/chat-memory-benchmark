@@ -44,6 +44,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | [Hindsight](https://github.com/vectorize-io/hindsight) | Vectorize | 1.2.0 初判 [513 / 714](results/2026-11-04.md) |
 | dsh-biocore 0.4.0 | 未标注 | **不可用**：测试历时约 34 小时，仅完成 58 / 714 题后停止；[查看记录](results/2026-11-07-recap.md) |
 | [dsh-neo4j-memory](https://github.com/shuunO-O/dsh-neo4j-memory) | shuunO-O | 作者自测；DeepSeek 初判及部分抽查后 [684 / 714](results/2026-11-05-dsh-neo4j.md)，判分者与其他项目不同 |
+| [dsh-memu-memory](https://github.com/Tkingxiao/dsh-memu-memory) | Tkingxiao | 作者自测；1.2.7 初判 [653 / 714](results/2026-11-06-dsh-memu-memory.md)，判分者与其他项目不同 |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
 
 各项目的固定版本、实际接入方式、维护开关和局限统一放在[测试配置与局限](docs/tested-configurations.md)。作者署名沿用评测登记信息。
@@ -51,6 +52,8 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 ## 作者自测投稿
 
 [dsh-neo4j-memory 六人物测试记录](results/2026-11-05-dsh-neo4j.md)：插件作者侧运行，DeepSeek 初判 682 / 714；作者抽查 26 题、维护者另抽查修正 2 题后为 684 / 714。适配方式和判分者与其他记录不同，人工抽查未覆盖全部题目；该结果不是维护者独立复现的成绩。
+
+[dsh-memu-memory 1.2.7 六人物测试记录](results/2026-11-06-dsh-memu-memory.md)：插件作者侧运行，按考试截止点增量回放并重建记忆，DeepSeek 初判 653 / 714；未做人工抽查，判分方式与其他记录不同；测试工具见 [Tkingxiao/memu-bench-714](https://github.com/Tkingxiao/memu-bench-714)。该结果不是维护者独立复现的成绩。
 
 ## 从哪里开始
 
