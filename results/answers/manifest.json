@@ -174,6 +174,12 @@
       "file": "whale-card.jsonl",
       "answers": 714,
       "sha256": "204b9b83682d5126797881d056f424fc39a7d28be787c32c74b6f47b6b7dab46"
+    },
+    {
+      "name": "baishou-next",
+      "file": "baishou-next.jsonl",
+      "answers": 711,
+      "sha256": "a1126b8f841c2fa16b250d6e34843d6f9bca63b1a7a1c3f255c0c5de40386e17"
     }
   ]
 }
