@@ -51,6 +51,8 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 
 ## 作者自测投稿
 
+想提交自己的系统成绩？请先阅读[成绩投稿要求](docs/submit-results.md)：里面有可直接交给 Codex 的任务，以及考试、逐题回答、判分和配置的提交方式。
+
 [dsh-neo4j-memory 六人物测试记录](results/2026-11-05-dsh-neo4j.md)：插件作者侧运行，DeepSeek 初判 682 / 714；作者抽查 26 题、维护者另抽查修正 2 题后为 684 / 714。适配方式和判分者与其他记录不同，人工抽查未覆盖全部题目；该结果不是维护者独立复现的成绩。
 
 [dsh-memu-memory 1.2.7 六人物测试记录](results/2026-11-06-dsh-memu-memory.md)：插件作者侧运行，按考试截止点增量回放并重建记忆，DeepSeek 初判 653 / 714；未做人工抽查，判分方式与其他记录不同；测试工具见 [Tkingxiao/memu-bench-714](https://github.com/Tkingxiao/memu-bench-714)。该结果不是维护者独立复现的成绩。
@@ -63,6 +65,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | 看各项目的逐题回答 | [逐题答卷](results/answers/README.md) |
 | 下载完整正式测试集 | [六人物正式测试集](datasets/README.md) |
 | 给自己的测试回答判分 | [判分工具、证据和使用方法](grading/README.md) |
+| 提交自己的测试成绩 | [成绩投稿要求](docs/submit-results.md) |
 | 直接看示例题、答案和证据 | 下载仓库后打开 [示例题.html](demo/示例题.html)，或在线读 [示例题.md](demo/示例题.md) |
 | 把示例接到自己的系统 | [接入说明](docs/integration.md)、[读题工具](demo/read_exam.py) |
 | 核对所有已测系统版本和配置 | [测试配置与局限](docs/tested-configurations.md) |
