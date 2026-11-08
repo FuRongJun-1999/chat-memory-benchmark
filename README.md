@@ -42,7 +42,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | [OpenViking](https://github.com/volcengine/OpenViking) | 火山引擎 | 0.5.2.1 初判 [555 / 714](results/2026-11-04.md) |
 | [dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory) | eryucheng | 强制原生检索重测初判 [621 / 714](results/2026-11-05-suzu-forced.md)；自主决定是否检索的上一轮 [516 / 714](results/2026-11-04.md) |
 | [Hindsight](https://github.com/vectorize-io/hindsight) | Vectorize | 1.2.0 初判 [513 / 714](results/2026-11-04.md) |
-| dsh-biocore 0.4.0 | 未标注 | **不可用**：测试历时约 34 小时，仅完成 58 / 714 题后停止；[查看记录](results/2026-11-07-recap.md) |
+| [dsh-biocore 0.4.0](https://www.npmjs.com/package/dsh-biocore/v/0.4.0) | 未标注 | **不可用**：测试历时约 34 小时，仅完成 58 / 714 题后停止；[查看记录](results/2026-11-07-recap.md) |
 | [dsh-neo4j-memory](https://github.com/shuunO-O/dsh-neo4j-memory) | shuunO-O | 作者自测；DeepSeek 初判及部分抽查后 [684 / 714](results/2026-11-05-dsh-neo4j.md)，判分者与其他项目不同 |
 | [dsh-memu-memory](https://github.com/Tkingxiao/dsh-memu-memory) | Tkingxiao | 作者自测；1.2.7 初判 [653 / 714](results/2026-11-06-dsh-memu-memory.md)，判分者与其他项目不同 |
 | [dsh-world 0.7.2](https://github.com/chenkezhen480/dsh-world) | chenkezhen480 | 完整卷 557 / 714；[成绩数据](results/2026-11-08-dsh-world-0.7.2-summary.json) |
@@ -55,7 +55,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | Yuuyuko-uu | 383 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | [dsh-mnemosyne](https://github.com/canyueY/dsh-mnemosyne) | 胃疾璇 | 425 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | [memory-brain](https://github.com/peterpoal134/memory-brain) | peterpoal134 | 454 / 714；[成绩盘点](results/2026-11-08-recap.md) |
-| dsh-memory-calendar | IStarFoxI | 505 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [dsh-memory-calendar](https://github.com/IStarFoxI/dsh-memory-calendar) | IStarFoxI | 505 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | [dsh-hippocampus](https://github.com/coner13/dsh-hippocampus) | coner13 | 528 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | [dsh-memory-brain](https://github.com/y083245/dsh-memory-brain) | y083245 | 583 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
