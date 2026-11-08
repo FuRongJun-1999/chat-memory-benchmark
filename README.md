@@ -46,7 +46,7 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | [dsh-neo4j-memory](https://github.com/shuunO-O/dsh-neo4j-memory) | shuunO-O | 作者自测；DeepSeek 初判及部分抽查后 [684 / 714](results/2026-11-05-dsh-neo4j.md)，判分者与其他项目不同 |
 | [dsh-memu-memory](https://github.com/Tkingxiao/dsh-memu-memory) | Tkingxiao | 作者自测；1.2.7 初判 [653 / 714](results/2026-11-06-dsh-memu-memory.md)，判分者与其他项目不同 |
 | [dsh-world 0.7.2](https://github.com/chenkezhen480/dsh-world) | chenkezhen480 | 完整卷 557 / 714；[成绩数据](results/2026-11-08-dsh-world-0.7.2-summary.json) |
-| dsh-memory-keeper | flywalker68 | 完整卷 542 / 714；[成绩数据](results/2026-11-08-dsh-memory-keeper-summary.json) |
+| [dsh-memory-keeper](https://github.com/flywalker68/dsh-memory-keeper) | flywalker68 | 完整卷 542 / 714；[成绩数据](results/2026-11-08-dsh-memory-keeper-summary.json) |
 | [whale-card](https://github.com/wangjumhan131/whale-card) | wangjumhan131 | 完整卷 217 / 714；[成绩数据](results/2026-11-08-whale-card-summary.json) |
 | [BaiShou Next](https://github.com/foxletters-hq/BaiShou-Next) | foxletters-hq | 已答 711 题，通过 514 题；[成绩数据](results/2026-11-08-baishou-next-summary.json) |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
