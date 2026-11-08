@@ -1,0 +1,225 @@
+{
+ "system": "bm25-recent6",
+ "mode": "enforced",
+ "n_points": 24,
+ "n_leaks": 0,
+ "leaks": [],
+ "rows": [
+  {
+   "id": "M01-G037/d003",
+   "persona": "M01",
+   "cutoff_turn": 384,
+   "canary_turn": 385,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G037/d015",
+   "persona": "M01",
+   "cutoff_turn": 603,
+   "canary_turn": 604,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G037/d045",
+   "persona": "M01",
+   "cutoff_turn": 964,
+   "canary_turn": 965,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G077/d000",
+   "persona": "M01",
+   "cutoff_turn": 1159,
+   "canary_turn": 1160,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G008/xn1",
+   "persona": "M01",
+   "cutoff_turn": 1337,
+   "canary_turn": 1338,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G041/d003",
+   "persona": "M01",
+   "cutoff_turn": 1385,
+   "canary_turn": 1386,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G003/d015",
+   "persona": "M01",
+   "cutoff_turn": 1388,
+   "canary_turn": 1389,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G093/d000",
+   "persona": "M01",
+   "cutoff_turn": 1504,
+   "canary_turn": 1505,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G021/d000",
+   "persona": "M01",
+   "cutoff_turn": 1847,
+   "canary_turn": 1848,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G038/d045",
+   "persona": "M01",
+   "cutoff_turn": 1927,
+   "canary_turn": 1928,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G056/d003",
+   "persona": "M01",
+   "cutoff_turn": 2043,
+   "canary_turn": 2044,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M01-G044/d090",
+   "persona": "M01",
+   "cutoff_turn": 2475,
+   "canary_turn": 2476,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G037/d003",
+   "persona": "M02",
+   "cutoff_turn": 678,
+   "canary_turn": 679,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G055/xu1",
+   "persona": "M02",
+   "cutoff_turn": 683,
+   "canary_turn": 684,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G043/d015",
+   "persona": "M02",
+   "cutoff_turn": 776,
+   "canary_turn": 777,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G033/d045",
+   "persona": "M02",
+   "cutoff_turn": 1194,
+   "canary_turn": 1195,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G040/d000",
+   "persona": "M02",
+   "cutoff_turn": 1244,
+   "canary_turn": 1245,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G017/xc1",
+   "persona": "M02",
+   "cutoff_turn": 1381,
+   "canary_turn": 1382,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G034/d015",
+   "persona": "M02",
+   "cutoff_turn": 1441,
+   "canary_turn": 1442,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G026/d045",
+   "persona": "M02",
+   "cutoff_turn": 1504,
+   "canary_turn": 1505,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G056/d000",
+   "persona": "M02",
+   "cutoff_turn": 1682,
+   "canary_turn": 1683,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G055/d045",
+   "persona": "M02",
+   "cutoff_turn": 1941,
+   "canary_turn": 1942,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G031/d090",
+   "persona": "M02",
+   "cutoff_turn": 2324,
+   "canary_turn": 2325,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  },
+  {
+   "id": "M02-G055/d090",
+   "persona": "M02",
+   "cutoff_turn": 2405,
+   "canary_turn": 2406,
+   "leaked_nonces": [],
+   "turns_after_cutoff": [],
+   "own_canary_leaked": false
+  }
+ ]
+}

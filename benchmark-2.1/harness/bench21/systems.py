@@ -1,0 +1,387 @@
+# -*- coding: utf-8 -*-
+"""Reference system adapters for Bench 2.1.
+
+Adapter contract (what every system must implement; the evaluator enforces the protocol):
+
+    class MySystem(System):
+        def ingest(self, turn):            # called once per history turn, strictly in order
+        def retrieve(self, question, now, cutoff_turn) -> Retrieval
+
+The evaluator feeds a system ONLY turns up to the exam point's cutoff (see runner.py), never
+the history file.  retrieve() must be read-only: nothing the exam asks may be written to memory.
+A system makes model calls only through gateway_url (env OPENAI_BASE_URL) so they are metered.
+Retrieval.prompt is the memory text placed in front of the question (its tokens are billed to
+the system at the flash input price); Retrieval.used_turns lists history turns it shows (checked
+against the cutoff by the evaluator).
+"""
+import collections
+import datetime
+import json
+import math
+import os
+import re
+import threading
+import time
+import urllib.request
+
+import numpy as np
+
+EMBED_MODEL = "qwen3.7-text-embedding"
+RERANK_MODEL = "qwen3.7-text-rerank"
+POOL, TOP_K, RECENT, RRF_K = 40, 10, 6, 60
+WEEKDAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+
+
+class Retrieval:
+    def __init__(self, prompt, used_turns, meta=None):
+        self.prompt, self.used_turns, self.meta = prompt, list(used_turns), meta or {}
+
+
+class Gateway:
+    """Tiny client for the evaluator gateway.  Reads the base URL from OPENAI_BASE_URL."""
+
+    def __init__(self, base_url=None, run="", system="", timeout=300):
+        self.base = (base_url or os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:18877/v1")).rstrip("/")
+        self.run, self.system, self.timeout = run, system, timeout
+        self.lock = threading.Lock()
+
+    def post(self, route, body, phase, tag=""):
+        data = json.dumps(body, ensure_ascii=False).encode("utf-8")
+        hdr = {"Content-Type": "application/json", "X-Bench-Run": self.run, "X-Bench-System": self.system,
+               "X-Bench-Phase": phase, "X-Bench-Tag": tag, "Authorization": "Bearer evaluator-gateway"}
+        last = None
+        for attempt in range(6):
+            try:
+                req = urllib.request.Request(self.base + route, data=data, headers=hdr, method="POST")
+                with urllib.request.urlopen(req, timeout=self.timeout) as r:
+                    return json.loads(r.read().decode("utf-8"))
+            except urllib.error.HTTPError as e:
+                last = f"HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:300]}"
+                if e.code in (402, 400, 404):
+                    raise RuntimeError(last)
+            except Exception as e:  # noqa
+                last = f"{type(e).__name__}: {str(e)[:150]}"
+            time.sleep(min(30, 2 ** attempt))
+        raise RuntimeError("gateway failed: " + str(last))
+
+    def chat(self, model, messages, phase, tag="", **kw):
+        body = {"model": model, "messages": messages, **kw}
+        return self.post("/chat/completions", body, phase, tag)
+
+    def embed(self, texts, phase, tag="", query=False):
+        body = {"model": EMBED_MODEL, "input": texts, "dimensions": 2560}
+        if query:
+            body["text_type"] = "query"
+        r = self.post("/embeddings", body, phase, tag)
+        return [d["embedding"] for d in r["data"]]
+
+    def rerank(self, query, docs, phase, tag=""):
+        r = self.post("/rerank", {"model": RERANK_MODEL, "query": query, "documents": docs, "top_n": len(docs)}, phase, tag)
+        return r["results"]
+
+
+class Unavailable(RuntimeError):
+    """The system cannot answer this exam point right now (e.g. its provider is unreachable)."""
+
+
+class System:
+    name = "base"
+
+    def ingest(self, turn):
+        raise NotImplementedError
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        raise NotImplementedError
+
+
+# ---------------------------------------------------------------- presentation
+SYS_BASE = "你是用户长期聊天的伴侣，下面是你们过去的聊天片段和最近的对话，请根据记忆自然地回答用户这句话。"
+SYS_R3 = "\n".join([
+    "你是用户长期聊天的伴侣。下面是你们过去的聊天片段（每段标有当时的日期）和最近的对话，请根据记忆自然地回答用户这句话。",
+    "记忆使用原则：",
+    "- 记忆里每段前面标了日期、星期和离现在多久；话里的今天/明天/昨天等后面〔=…〕是已经换算好的日期，直接使用。其他相对说法（下周三、周末、26号等）请对照日历，按那句话说出的日期换算；拿不准时说出原话和你的理解。",
+    "- 计划和约定只代表当时的打算；之后没有提到结果的，就说不知道后来怎样，不要当作已经发生或没发生。",
+    "- 用户明确改口（说了“改成…”“其实是…”“不…了”）的，以改口后的为准。",
+    "- 前后说法不一致又没有解释的，说明有两种说法，不替对方下结论，也不猜原因或动机。",
+    "- 你自己以前说过的推测或建议，不等于用户确认的事实。",
+    "- 记忆里没有的细节不要补，直接说不记得或问一句。",
+])
+RELDAY = {"大前天": -3, "前天": -2, "昨天": -1, "昨晚": -1, "今天": 0, "今晚": 0, "今早": 0,
+          "明天": 1, "明晚": 1, "明早": 1, "后天": 2, "大后天": 3}
+DATE_RE = re.compile("|".join(sorted(RELDAY, key=len, reverse=True)))
+
+
+def stamp(s):
+    dt = datetime.datetime.fromisoformat(s)
+    return f"{dt:%Y-%m-%d} {WEEKDAYS[dt.weekday()]} {dt:%H:%M}"
+
+
+def calendar_lines(now):
+    dt = datetime.datetime.fromisoformat(now).date()
+    monday = dt - datetime.timedelta(days=dt.weekday())
+    lines = []
+    for back in range(7, -1, -1):
+        start = monday - datetime.timedelta(weeks=back)
+        days = [start + datetime.timedelta(days=k) for k in range(7)]
+        lines.append("  ".join(f"{d:%m-%d}{WEEKDAYS[k]}" for k, d in enumerate(days)))
+    return lines
+
+
+def turn_day(time_iso):
+    dt = datetime.datetime.fromisoformat(time_iso)
+    d = dt.date()
+    return d - datetime.timedelta(days=1) if dt.hour < 5 else d
+
+
+def annotate(text, d):
+    def rep(m):
+        x = d + datetime.timedelta(days=RELDAY[m.group(0)])
+        return m.group(0) + f"〔={x.month}/{x.day}{WEEKDAYS[x.weekday()]}〕"
+    return DATE_RE.sub(rep, text)
+
+
+def age_label(td, qd):
+    delta = (qd - td).days
+    if delta < 0:
+        raise ValueError("turn after question")
+    if delta == 0:
+        return "今天"
+    if delta == 1:
+        return "昨天"
+    if delta == 2:
+        return "前天"
+    if delta <= 13:
+        return f"{delta}天前"
+    if delta <= 56:
+        return f"{delta // 7}周前"
+    months = (qd.year - td.year) * 12 + (qd.month - td.month) - (1 if qd.day < td.day else 0)
+    return f"{max(1, months)}个月前"
+
+
+def fmt_r3(t, now):
+    td = datetime.datetime.fromisoformat(t["time"]).date()
+    qd = datetime.datetime.fromisoformat(now).date()
+    head = f"[{stamp(t['time'])} · {age_label(td, qd)}]"
+    rd = turn_day(t["time"])
+    return f"{head}\n用户：{annotate(t['user'], rd)}\n小满：{annotate(t['assistant'], rd)}"
+
+
+def fmt_base(t, now):
+    return f"[{t['time']}]\n用户：{t['user']}\n小满：{t['assistant']}"
+
+
+def render(blocks, recent, now, style):
+    if style == "base":
+        parts = [SYS_BASE, "【过去的聊天片段】"] + [fmt_base(t, now) for t in blocks]
+        parts += ["【最近的对话】"] + [fmt_base(t, now) for t in recent]
+        return "\n\n".join(parts)
+    header = [f"现在是 {stamp(now)}", "最近8周日历（每行一周，周一在前）："] + calendar_lines(now)
+    parts = [SYS_R3, "\n".join(header), "【过去的聊天片段】"] + [fmt_r3(t, now) for t in blocks]
+    parts += ["【最近的对话】"] + [fmt_r3(t, now) for t in recent]
+    return "\n\n".join(parts)
+
+
+# ---------------------------------------------------------------- BM25
+RUN_RE = re.compile(r"[一-鿿]+|[A-Za-z0-9]+")
+
+
+def tokens(text):
+    out = []
+    for seg in RUN_RE.findall(text.lower()):
+        if re.match(r"[一-鿿]", seg):
+            out += list(seg)
+            out += [seg[k:k + 2] for k in range(len(seg) - 1)]
+        else:
+            out.append(seg)
+    return out
+
+
+class IncBM25:
+    """BM25 built incrementally: it can only ever know the turns that were ingested."""
+
+    def __init__(self, k1=1.5, b=0.75):
+        self.k1, self.b = k1, b
+        self.dl, self.post, self.total = [], collections.defaultdict(list), 0
+
+    def add(self, text):
+        idx = len(self.dl)
+        tk = tokens(text)
+        self.dl.append(len(tk))
+        self.total += len(tk)
+        for w, c in collections.Counter(tk).items():
+            self.post[w].append((idx, c))
+
+    def top(self, query, k):
+        N = len(self.dl)
+        avg = self.total / N
+        sc = collections.defaultdict(float)
+        for w, _ in collections.Counter(tokens(query)).items():
+            pl = self.post.get(w)
+            if not pl:
+                continue
+            df = len(pl)
+            idf = math.log(1 + (N - df + 0.5) / (df + 0.5))
+            for idx, tf in pl:
+                sc[idx] += idf * tf * (self.k1 + 1) / (tf + self.k1 * (1 - self.b + self.b * self.dl[idx] / avg))
+        return [i for i, _ in sorted(sc.items(), key=lambda x: (-x[1], x[0]))[:k]]
+
+
+def rrf(lists, k=RRF_K):
+    sc = collections.defaultdict(float)
+    for L in lists:
+        for r, i in enumerate(L):
+            sc[i] += 1.0 / (k + r + 1)
+    return [i for i, _ in sorted(sc.items(), key=lambda x: (-x[1], x[0]))]
+
+
+def doc_text(t):
+    return f"用户：{t['user']}\n小满：{t['assistant']}"
+
+
+# ---------------------------------------------------------------- Qwen RAG
+class QwenRag(System):
+    """qwen-base / r3: exchange chunks -> Qwen3.7 embeddings + BM25 (RRF, pool 40) -> Qwen3.7 rerank top 10
+    + last 6 turns.  style 'base' or 'r3' only changes how the retrieved text is presented.
+    leaky=True is the POSITIVE CONTROL used by the sentinel test: it is handed future turns on purpose
+    (ingest of any turn, including ones past the cutoff) and does no cutoff filtering."""
+
+    def __init__(self, gw, style="base", leaky=False):
+        self.gw, self.style, self.leaky = gw, style, leaky
+        self.name = "qwen-" + style if style == "base" else "r3"
+        self.turns, self.vecs, self.pending = [], [], []
+        self.bm = IncBM25()
+
+    def ingest(self, turn):
+        self.turns.append(turn)
+        self.bm.add(doc_text(turn))
+        self.pending.append(len(self.turns) - 1)
+
+    def _flush(self, tag):
+        pend, self.pending = self.pending, []
+        if not pend:
+            return
+        self.vecs.extend([None] * (len(self.turns) - len(self.vecs)))
+        batches = [pend[i:i + 10] for i in range(0, len(pend), 10)]
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(b):
+            return b, self.gw.embed([doc_text(self.turns[i]) for i in b], "ingest", tag)
+        with ThreadPoolExecutor(4) as ex:
+            for b, vs in ex.map(one, batches):
+                for i, v in zip(b, vs):
+                    a = np.asarray(v, dtype=np.float32)
+                    self.vecs[i] = a / np.linalg.norm(a)
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        self._flush("flush")
+        n = len(self.turns)
+        if not self.leaky:
+            assert n == cutoff_turn, f"adapter holds {n} turns but cutoff is {cutoff_turn}"
+        q = np.asarray(self.gw.embed([question], "retrieve", "q", query=True)[0], dtype=np.float32)
+        q /= np.linalg.norm(q)
+        V = np.stack(self.vecs[:n])
+        vec = np.argsort(-(V @ q), kind="stable")[:POOL].tolist()
+        pool = rrf([vec, self.bm.top(question, POOL)])[:POOL]
+        res = self.gw.rerank(question, [doc_text(self.turns[i]) for i in pool], "retrieve", "rr")
+        ranked = sorted(res, key=lambda x: -x["relevance_score"])[:TOP_K]
+        picks = sorted(pool[x["index"]] for x in ranked)
+        recent = list(range(max(0, n - RECENT), n)) if not self.leaky else list(range(max(0, cutoff_turn - RECENT), cutoff_turn))
+        blocks = [self.turns[i] for i in picks]
+        text = render(blocks, [self.turns[i] for i in recent], now, self.style)
+        used = sorted({self.turns[i]["turn"] for i in picks} | {self.turns[i]["turn"] for i in recent})
+        return Retrieval(text, used, {"retrieved_turns": [self.turns[i]["turn"] for i in picks],
+                                      "pool_turns": [self.turns[i]["turn"] for i in pool]})
+
+
+# ---------------------------------------------------------------- baselines
+class NoHistory(System):
+    name = "none"
+
+    def ingest(self, turn):
+        pass
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        return Retrieval(SYS_BASE.split("，")[0] + "。你没有任何过去的聊天记录，请自然地回答用户这句话。", [])
+
+
+class Vague(System):
+    """Always-vague reference: no memory, and the prompt tells the model to answer warmly but without any concrete fact.
+    Shows how much a judge rewards 'sounds relevant' answers."""
+    name = "vague"
+
+    def ingest(self, turn):
+        pass
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        return Retrieval("你是用户长期聊天的伴侣小满。请用一两句温暖、听起来很相关的话回应用户，但不要给出任何具体的事实、日期、名字或数字，也不要下明确的结论。", [])
+
+
+class RecentN(System):
+    def __init__(self, n=6):
+        self.n, self.turns, self.name = n, [], f"recent{n}"
+
+    def ingest(self, turn):
+        self.turns.append(turn)
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        rec = self.turns[-self.n:]
+        text = "\n\n".join([SYS_BASE, "【最近的对话】"] + [fmt_base(t, now) for t in rec])
+        return Retrieval(text, [t["turn"] for t in rec])
+
+
+class FullContext(System):
+    """'Stuff everything': the most recent turns that fit a context budget (window_tokens of memory text).
+    M01's whole history is about 167k tokens and M02's about 680k, so late exam points are truncated at the
+    oldest end, as a 128k-window model would."""
+
+    TOK_PER_CHAR = 0.70
+
+    def __init__(self, window_tokens=110000):
+        self.window, self.turns, self.name = window_tokens, [], "full-context"
+        self.sizes = []
+
+    def ingest(self, turn):
+        self.turns.append(turn)
+        self.sizes.append(len(fmt_base(turn, "")) + 2)
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        budget = int(self.window / self.TOK_PER_CHAR)
+        total, i = 0, len(self.turns)
+        while i > 0 and total + self.sizes[i - 1] <= budget:
+            total += self.sizes[i - 1]
+            i -= 1
+        keep = self.turns[i:]
+        text = "\n\n".join([SYS_BASE.replace("过去的聊天片段和最近的对话", "全部聊天记录"), "【聊天记录】"] +
+                           [fmt_base(t, now) for t in keep])
+        return Retrieval(text, [t["turn"] for t in keep], {"first_turn": keep[0]["turn"] if keep else None})
+
+
+class Bm25Local(System):
+    """Local lexical reference: BM25 top-10 over the turns seen so far + the last 6 turns.  Makes no model calls (C = memory text only)."""
+
+    def __init__(self):
+        self.turns, self.bm, self.name = [], IncBM25(), "bm25-recent6"
+
+    def ingest(self, turn):
+        self.turns.append(turn)
+        self.bm.add(doc_text(turn))
+
+    def retrieve(self, question, now, cutoff_turn, item_id=None):
+        n = len(self.turns)
+        picks = sorted(self.bm.top(question, TOP_K))
+        end = cutoff_turn if getattr(self, "leaky", False) else n      # leaky = positive control for the sentinel test
+        recent = list(range(max(0, end - RECENT), end))
+        text = render([self.turns[i] for i in picks], [self.turns[i] for i in recent], now, "base")
+        return Retrieval(text, sorted({self.turns[i]["turn"] for i in picks} | {self.turns[i]["turn"] for i in recent}),
+                         {"retrieved_turns": [self.turns[i]["turn"] for i in picks]})
+
+
+REGISTRY = {
+    "qwen-base": lambda gw: QwenRag(gw, "base"),
+    "r3": lambda gw: QwenRag(gw, "r3"),
+    "none": lambda gw: NoHistory(),
+    "recent6": lambda gw: RecentN(6),
+    "full-context": lambda gw: FullContext(),
+    "bm25-recent6": lambda gw: Bm25Local(),
+    "vague": lambda gw: Vague(),
+}

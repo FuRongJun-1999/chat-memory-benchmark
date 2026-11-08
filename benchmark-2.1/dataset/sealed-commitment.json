@@ -1,0 +1,47 @@
+{
+ "version": "2.1",
+ "note": "Sealed questions are released only when the challenge is scored. These hashes fix the sealed set now.",
+ "sealed_exam_inputs_sha256": "9c2662044409258269406e737ab737c714f24e2eab3d9913b2b9dd1028e56d15",
+ "sealed_answer_key_sha256": "64990214b3bc4b4085d0ee6787df1aa5ae49e9f1842ca18cdc81414a731b9ac9",
+ "full_release_exam_inputs_sha256": "1d1593e074f9fa17701a63b16833cee82bb9afb5c458a741ddcfb72188341904",
+ "rewrite_table_full_sha256": "094c4cd7c7548788b55a32985832e5b83f56677f805d4bf7b597d939483f5f3c",
+ "histories_sha256": {
+  "M01": "fc8b206791ee06b5a57823ffaff93bf2d46b99efa5e3d7d1d91705514b07ec1f",
+  "M02": "8d3ffb4ea361bb35722abcc53114282256fa963f2794cc2c39a7210ae87ae9b4"
+ },
+ "sealed_counts": {
+  "total": 453,
+  "by_board": {
+   "M01": 236,
+   "M02": 217
+  },
+  "by_board_probe_kind": {
+   "M01|aggregate|main": 3,
+   "M01|condition_control|main": 5,
+   "M01|date_key|main": 6,
+   "M01|due_day|main": 5,
+   "M01|implicit|main": 7,
+   "M01|legacy|control": 12,
+   "M01|legacy|main": 176,
+   "M01|no_due_control|main": 4,
+   "M01|premise_twin|main": 6,
+   "M01|time_twin|main": 12,
+   "M02|condition_control|main": 1,
+   "M02|date_key|main": 4,
+   "M02|due_day|main": 3,
+   "M02|implicit|main": 6,
+   "M02|legacy|control": 13,
+   "M02|legacy|main": 176,
+   "M02|no_due_control|main": 1,
+   "M02|premise_twin|main": 8,
+   "M02|time_twin|main": 5
+  }
+ },
+ "dev_counts": {
+  "total": 212,
+  "by_board": {
+   "M01": 135,
+   "M02": 77
+  }
+ }
+}

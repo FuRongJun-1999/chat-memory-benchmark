@@ -1,0 +1,43 @@
+{
+ "persona": "M01",
+ "file": "M01.jsonl",
+ "sha256": "fc8b206791ee06b5a57823ffaff93bf2d46b99efa5e3d7d1d91705514b07ec1f",
+ "turns": 3000,
+ "sessions": 235,
+ "models": [
+  "deepseek-v4.1-flash"
+ ],
+ "note": "全部对话（用户与助手）由 deepseek-v4.1-flash 生成；错别字/拼音缩写/表情由脚本后处理。S4 审查后修订：见 s4/修订记录.jsonl（修订用 deepseek-v4.1-flash 或脚本）；审查模型 qwen3.7-plus、glm-5.3-flash 只读不写。",
+ "generated_first": "2026-11-04T12:09:05+08:00",
+ "generated_last": "2026-11-04T12:48:32+08:00",
+ "prompt": "s3_dialog.md",
+ "prompt_version": "s3-dialog-v1",
+ "scripts": [
+  "s3_gen.py(s3-gen-v1)",
+  "s3_check.py(s3-check-v1.1)",
+  "s4_lib.py(s4-lib-v1)",
+  "s4_assemble.py(s4-assemble-v1)"
+ ],
+ "day_field": "日 = 逻辑日序号（2026-09-01 为 1）；会话 = '日-当日会话号'",
+ "stage": "S4 revised",
+ "sha256_s3": "d05d96f25d45a762e408b5f486cc7c114e429d006ae8dda4d430411030ba9b05",
+ "revised_at": "2026-11-04T16:21:47+08:00",
+ "revised_sessions": [
+  "d009-s1",
+  "d018-s1",
+  "d023-s1",
+  "d035-s1",
+  "d036-s1",
+  "d040-s1",
+  "d061-s1",
+  "d061-s2",
+  "d065-s1",
+  "d074-s2",
+  "d085-s2",
+  "d088-s1",
+  "d090-s7",
+  "d104-s1",
+  "d134-s2"
+ ],
+ "quarantined_sessions": []
+}

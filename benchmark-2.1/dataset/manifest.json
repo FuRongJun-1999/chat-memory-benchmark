@@ -1,0 +1,31 @@
+{
+ "benchmark": "中文陪伴记忆 Benchmark 2.1（公开部分：开发集 + 历史 + 封存集承诺）",
+ "version": "2.1-public",
+ "personas": {
+  "M01": {
+   "history_file": "histories/M01.jsonl",
+   "sha256": "fc8b206791ee06b5a57823ffaff93bf2d46b99efa5e3d7d1d91705514b07ec1f",
+   "turns": 3000,
+   "sessions": 235
+  },
+  "M02": {
+   "history_file": "histories/M02.jsonl",
+   "sha256": "8d3ffb4ea361bb35722abcc53114282256fa963f2794cc2c39a7210ae87ae9b4",
+   "turns": 2500,
+   "sessions": 144
+  }
+ },
+ "note": "本目录的 exam-inputs.jsonl 只含开发集。封存集见 sealed-commitment.json。",
+ "exam_inputs_sha256": "3d6e14e2c6d2a629a51bc3afe31d67fde80296d0f759fb8a8effa560684bf6d9",
+ "files": {
+  "exam-inputs.jsonl": "3d6e14e2c6d2a629a51bc3afe31d67fde80296d0f759fb8a8effa560684bf6d9",
+  "histories/M01.jsonl": "fc8b206791ee06b5a57823ffaff93bf2d46b99efa5e3d7d1d91705514b07ec1f",
+  "histories/M01.meta.json": "e4731f3fccac047b9e2d580f018a1cab0b2894be1e850b01febaadaa3f50059e",
+  "histories/M02.jsonl": "8d3ffb4ea361bb35722abcc53114282256fa963f2794cc2c39a7210ae87ae9b4",
+  "histories/M02.meta.json": "9f095e3198a6fb8eeb0b20dcc652464e9ad987e37c1c3206bba1b76dc73d708e",
+  "read_exam_v21.py": "80e21d8db5784ab6c374fa7082bf572f5b5de0b3843ffb9eea5f618daeac1f8c",
+  "review-only/answer-key.jsonl": "f006a60409ae1aeb8b59d1d5455e31d69a99c34eae3b80b23a551f946699cba6",
+  "review-only/rewrite-table-dev.jsonl": "64e9bb00e3fc8117e44345a18ae213e449c8725190db0aa35041d22117c01aac",
+  "sealed-commitment.json": "832d4965403603064637282fdc8df0b966e2450d4104687b5ba0efa707133e9b"
+ }
+}
