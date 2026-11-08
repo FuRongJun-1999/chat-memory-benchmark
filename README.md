@@ -29,14 +29,14 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 
 ## 已经测过哪些
 
-查看[最新成绩与费用综合盘点（2026 年 11 月 8 日）](results/2026-11-08-recap.md)，或查看[此前的成绩盘点](results/2026-11-07-recap.md)。下面保留此前已公开成绩的项目目录：完整卷和共同已答题的范围不同，比较请看各行链接里的同卷成绩。
+查看[最新成绩与费用综合盘点（2026 年 11 月 8 日）](results/2026-11-08-recap.md)，或查看[此前的成绩盘点](results/2026-11-07-recap.md)。下面列出 24 个已有成绩的项目，以及 Qwen 对照；BioCore 测试中止，单独列出。独立运行和外挂 Qwen 等不同配置不另算项目。完整卷和共同已答题的范围不同，比较请看各行链接里的同卷成绩。
 
 | 项目／上游 | 作者 | 测试状态与成绩（通过 / 已答） |
 | --- | --- | --- |
 | [冷热记忆方案（ARCHEON）](https://github.com/ARCHEON999/Companion-AI-Memory-Context-Token-Optimization) | 原无奇变 / ARCHEON999 | 按公开方案复现；完整卷 [356 / 714](results/2026-11-01-first-four.md) |
 | [SeekMemory](https://github.com/NeverENG/SeekMemory) | BangBang在coding / NeverENG | 原版插件，开启 Dream；完整卷 [230 / 714](results/2026-11-01-first-four.md) |
 | [digital-life-core](https://github.com/mashangshui/digital-life-core) | 温水 / mashangshui | 原生核心与迁移入口；完整卷 [233 / 714](results/2026-11-01-first-four.md) |
-| [dsh-soul](https://github.com/icyaaaww/dsh-soul) | 糖霜Official | 完整卷 418 / 714；合辑共同题 [402 / 687](results/2026-11-01.md) |
+| [dsh-soul](https://github.com/icyaaaww/dsh-soul) | 糖霜Official | 2.0 原生 452 / 714；[其他版本和配置](results/2026-11-07-recap.md) |
 | [SurfCore](https://github.com/Mieksido/surfcore) | 玛露Marrow | 完整卷 123 / 714；合辑共同题 [122 / 687](results/2026-11-01.md) |
 | [dsh-rofm](https://github.com/wall1234567/dsh-rofm) | 鄙人乃路人甲 | 1.4.2 重测初判 [471 / 714](results/2026-11-04.md)；旧版测试中断，保留 [242 / 687](results/2026-11-01.md) |
 | [OpenViking](https://github.com/volcengine/OpenViking) | 火山引擎 | 0.5.2.1 初判 [555 / 714](results/2026-11-04.md) |
@@ -49,6 +49,15 @@ Codex 会根据项目的接入方式完成测试，并使用本仓库的判分�
 | [dsh-memory-keeper](https://github.com/flywalker68/dsh-memory-keeper) | flywalker68 | 完整卷 542 / 714；[成绩数据](results/2026-11-08-dsh-memory-keeper-summary.json) |
 | [whale-card](https://github.com/wangjumhan131/whale-card) | wangjumhan131 | 完整卷 217 / 714；[成绩数据](results/2026-11-08-whale-card-summary.json) |
 | [BaiShou Next](https://github.com/foxletters-hq/BaiShou-Next) | foxletters-hq | 已答 711 题，通过 514 题；[成绩数据](results/2026-11-08-baishou-next-summary.json) |
+| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | omdsh-dev | 已答部分 341 / 539；[成绩盘点](results/2026-11-08-recap.md) |
+| [codex-deepseek-starter](https://github.com/xrh66/codex-deepseek-starter) | xrh66 | 345 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [dsh-memory（灵枢）](https://github.com/FuRongJun-1999/dsh-memory) | FuRongJun-1999 | DSH 原生 363 / 714；[其他配置](results/2026-11-07-recap.md) |
+| [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | Yuuyuko-uu | 383 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [dsh-mnemosyne](https://github.com/canyueY/dsh-mnemosyne) | 胃疾璇 | 425 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [memory-brain](https://github.com/peterpoal134/memory-brain) | peterpoal134 | 454 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| dsh-memory-calendar | IStarFoxI | 505 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [dsh-hippocampus](https://github.com/coner13/dsh-hippocampus) | coner13 | 528 / 714；[成绩盘点](results/2026-11-08-recap.md) |
+| [dsh-memory-brain](https://github.com/y083245/dsh-memory-brain) | y083245 | 583 / 714；[成绩盘点](results/2026-11-08-recap.md) |
 | Qwen RAG（本评测搭建的检索对照） | Qwen 模型团队；检索流程由本评测搭建 | 完整卷 [596 / 714](results/2026-11-01-first-four.md)；合辑共同题 [574 / 687](results/2026-11-01.md) |
 
 各项目的固定版本、实际接入方式、维护开关和局限统一放在[测试配置与局限](docs/tested-configurations.md)。作者署名沿用评测登记信息。
