@@ -22,6 +22,7 @@ import time
 
 from . import scoring
 from .release import board_name, jl, load_histories, load_items
+from .gateway import price_cny, _priced
 from .systems import REGISTRY, Gateway, Unavailable
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -192,7 +193,7 @@ def summarize(args, items, outdir, release, run, sample_ids, all_ctx_items):
         ctl = [i for i in scored if i.get("kind") == "control"]
         key = f"{args.system}:{persona}:{args.split}"
         sysrows = [r for r in led if r.get("run") == run and r.get("system") == key and r.get("phase") in ("ingest", "retrieve")]
-        sys_cost = sum(r["cost_cny"] for r in sysrows)
+        sys_cost = sum(price_cny(_priced(r["model"]), r.get("in_tokens", 0), r.get("out_tokens", 0)) for r in sysrows)
         from .gateway import PRICES
         fin = PRICES["models"]["deepseek-v4.1-flash"]["in_per_mtok"]
         # memory text billed at flash input price: exact for answered items, estimated for the rest

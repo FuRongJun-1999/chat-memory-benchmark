@@ -6,10 +6,15 @@
 import argparse, collections, json, math, os
 from . import scoring
 from .release import jl, load_items, board_name
-from .gateway import PRICES
+from .gateway import PRICES, price_cny, _priced
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIN = PRICES["models"]["deepseek-v4.1-flash"]["in_per_mtok"]
+
+
+def reprice(r):
+    """Cost of a ledger row under the CURRENT price table, from the recorded token counts."""
+    return price_cny(_priced(r["model"]), r.get("in_tokens", 0), r.get("out_tokens", 0))
 
 
 def load_run(run, system, split):
@@ -27,10 +32,11 @@ def ledger_costs(run, system, persona, split):
     ing = ret = 0.0
     for r in jl(os.path.join(ROOT, "runs", "bench21", "spend-ledger.jsonl")):
         if r.get("run") == run and r.get("system") == key:
+            c = reprice(r)
             if r["phase"] == "ingest":
-                ing += r["cost_cny"]
+                ing += c
             elif r["phase"] == "retrieve":
-                ret += r["cost_cny"]
+                ret += c
     return ing, ret
 
 
