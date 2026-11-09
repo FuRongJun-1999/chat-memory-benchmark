@@ -101,7 +101,7 @@ class State:
     cache = None
     cap_usd = 9.5
     keys = {}
-    sem = {"deepseek": threading.Semaphore(4), "dash": threading.Semaphore(6)}
+    sem = {"deepseek": threading.Semaphore(4), "dash": threading.Semaphore(int(os.environ.get("BENCH21_DASH_CONCURRENCY", "6")))}
 
 
 def _key(provider):

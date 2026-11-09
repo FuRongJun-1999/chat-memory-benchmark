@@ -54,14 +54,18 @@ def main():
     ap.add_argument("--release", required=True)
     ap.add_argument("--run", required=True)
     ap.add_argument("--split", default="sealed")
-    ap.add_argument("--systems", default="qwen-base-replay,r3-replay,full-context,bm25-recent6,recent6,none")
-    ap.add_argument("--ref", default="r3-replay")
+    ap.add_argument("--systems", default="qwen-base,r3,full-context,bm25-recent6,recent6,none")
+    ap.add_argument("--ref", default="r3")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     want = "test" if a.split == "sealed" else "dev"
     items = [i for i in load_items(a.release) if i.get("split") == want]
-    systems = {s: load_run(a.run, s, a.split) for s in a.systems.split(",")}
+    runof = {}
+    for tok in a.systems.split(","):               # "system" or "system@run" (a leaderboard may mix runs)
+        n, _, rn = tok.partition("@")
+        runof[n] = rn or a.run
+    systems = {s: load_run(runof[s], s, a.split) for s in runof}
     systems = {s: r for s, r in systems.items() if r}
     out = {"run": a.run, "split": a.split, "score_config": scoring.CONFIG, "prices_version": PRICES["version"], "boards": {}}
     for persona in ("M01", "M02"):
@@ -69,7 +73,7 @@ def main():
         legacy = {i["id"] for i in pit if i.get("probe_type") in (None, "legacy")}
         new = {i["id"] for i in pit if i.get("probe_type") not in (None, "legacy")}
         blocks = {}
-        for bname, ids in (("2.0题(含改写)", legacy), ("2.1新题", new)):
+        for bname, ids in (("封存集合计(旧+新)", legacy | new), ("2.0题(含改写)", legacy), ("2.1新题", new)):
             sysm = {s: r for s, r in systems.items() if any(i in r["jud"] for i in ids)}
             # common set: items every participating system actually scored (retrieval available)
             common = set(ids)
@@ -83,9 +87,9 @@ def main():
             rows = {}
             for s, r in sysm.items():
                 n_run = len([i for i in r["ctx"] if i in ids])
-                rows[s] = metrics(pit, a.run, r, s, persona, a.split, common if s != "full-context" else common & set(r["jud"]), n_run)
+                rows[s] = metrics(pit, runof[s], r, s, persona, a.split, common if s != "full-context" else common & set(r["jud"]), n_run)
                 if s == "full-context":                      # answered on a sample only: C over the whole common set
-                    full = metrics(pit, a.run, r, s, persona, a.split, common, n_run)
+                    full = metrics(pit, runof[s], r, s, persona, a.split, common, n_run)
                     rows[s]["C"], rows[s]["C_parts"] = full["C"], full["C_parts"]
                     rows[s]["sampled"] = True
             ref = rows.get(a.ref)

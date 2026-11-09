@@ -301,12 +301,15 @@ def main():
     ap.add_argument("--sample", type=int, default=0, help="answer/judge only a stratified sample of N main items per board")
     ap.add_argument("--seed", type=int, default=20261109)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--only-new", action="store_true", help="only the 2.1 new questions")
     ap.add_argument("--sentinel", action="store_true", help="retrieval-only leak sentinel run")
     ap.add_argument("--leaky", action="store_true", help="with --sentinel: positive control, system is handed future turns")
     ap.add_argument("--sentinel-n", type=int, default=12)
     args = ap.parse_args()
     want = "test" if args.split == "sealed" else "dev"
     items_all = [i for i in load_items(args.release) if i.get("split") == want]
+    if args.only_new:
+        items_all = [i for i in items_all if i.get("probe_type") not in (None, "legacy")]
     if args.limit:
         items_all = sorted(items_all, key=lambda x: x["id"])[:args.limit]
     hist = load_histories(args.release)

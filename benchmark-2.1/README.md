@@ -15,7 +15,7 @@
 | 计分方法：成绩 A、成本 C、综合分 S、泄漏哨兵 | [SCORING.md](SCORING.md) |
 | 公开开发集（212 题）、两个人物的完整历史、封存集的 SHA 承诺 | [dataset/](dataset/) |
 | 评测程序：网关、记忆隔离、泄漏哨兵、计分、适配器接口 | [harness/](harness/README.md) |
-| 榜单（A、C、S 三列 + 成绩—成本散点图 + 带环境标注的旧成绩） | [results/](results/README.md) |
+| 榜单（Qwen 为实时重跑；A、C、S 三列 + 成绩—成本散点图 + 带环境标注的旧成绩） | [results/](results/README.md) |
 | 判分员校准、宽松度检验、独立复查、勘误 | [errata/ERRATA-2.1.md](errata/ERRATA-2.1.md)、[results/judge-checks.md](results/judge-checks.md) |
 
 ## 题目构成
